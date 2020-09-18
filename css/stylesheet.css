@@ -7,7 +7,7 @@ body {
     margin:0 auto;
 }
 header, footer {
-    background-color: #643219;
+    background-color: #8C33FF;
     color: white;
     padding: 8px;
     border-radius: 15px;
@@ -44,4 +44,7 @@ footer p.highlight {
     color: yellow;
     font-size: .8em; 
     margin-top:0;
+}
+.profile {
+    max-width: 20%;
 }
