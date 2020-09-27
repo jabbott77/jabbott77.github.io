@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton|Titillium+Web&display=swap');
+
+html {
+    background-color: #009DFF;
+}
+body {
+    max-width: 1000px;
+    background-color: white;
+    display: block;
+    margin: auto;
+    float: none;
+}
+h1, h2, h3 {
+    font-family: 'Monoton';
+    color: #00FF26;
+    text-align: center;
+}
+header {
+     padding: 1em; 
+     text-align: center;
+     color: #00FF26;
+     background-color: #000000;
+}
+p {
+    font-family: 'Titillium+Web';
+    color: white;
+    padding: 1em;
+}
+main{
+	max-width: 1000px;
+	display: grid;
+	grid-template-columns: 1fr;
+  }
+img {
+    max-width: 200px;
+    padding-top: 10px;
+    margin-left: 2.5em;
+}
+div {
+    padding: 0px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: grey;
+    max-width: 280px;
+}
+a {
+    color: #00FF26;
+    font-size: 10px;
+}
+footer {
+    background-color: black;
+    color: #00FF26;
+    padding: 8px;
+    border-radius: 15px;
+    text-align: center;
+}
