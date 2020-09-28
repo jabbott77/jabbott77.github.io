@@ -1,4 +1,4 @@
-@media screen and (min-width: 200px){
+@media only screen and (min-width: 350px){
     
     main {
         display: grid;
