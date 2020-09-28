@@ -4,7 +4,7 @@ html {
     background-color: #009DFF;
 }
 body {
-    max-width: 1000px;
+    max-width: 900px;
     background-color: white;
     display: block;
     margin: auto;
@@ -27,7 +27,7 @@ p {
     padding: 1em;
 }
 main{
-	max-width: 1000px;
+	max-width: 900px;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
   }
