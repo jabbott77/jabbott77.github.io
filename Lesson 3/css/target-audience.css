@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Sansita+Swashed&display=swap");
+
+html {
+    background-color: #41FFF2;
+}
+
+body {
+    background-color: #CFCFCF;
+    max-width: 1200px;
+    display: block;
+    margin: auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Sanita Swashed', cursive;
+    color: #9F33FF;
+    text-align: center;
+}
+p, li {
+    font-family: 'Courier Prime', 'monospace';
+    color: black;
+    padding: 0em;
+    font-size: 20px;
+}
+p {
+    text-align: center;
+}
+
+.logo {
+    max-width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ppurpose {
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row; 
+}
+
+nav {
+	background-color: #36454f;
+	text-align: center;
+	box-shadow: 0 2px 15px gray;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav ul li a {
+    display: block;
+	color: #C2F73F;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+    font-size: 0.95rem;
+}
+nav a:hover {
+	background-color: #9F33FF;
+	color: #C2F73F
+}
+header,
+nav,
+main,
+footer {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+nav ul { 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /*grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));*/
+}
+footer {
+    text-align: center;
+}
