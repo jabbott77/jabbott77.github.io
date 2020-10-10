@@ -1,7 +1,7 @@
 /* Small/Phone View ***************/
 nav {
     margin: 0 auto;
-	max-width: 760px;
+	/*max-width: 760px;*/
 	background-color: #36454f;
 }
 .navigation {
@@ -126,6 +126,19 @@ div {
 @media only screen and (min-width: 50em) {
 .five {
 	display: grid;
-    grid-template-columns: 150px 150px 150px 150px 150px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+/*.navigation {
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left:50%; 
+    max-width: 2000px;
+}*/
+body {
+    background-color: #CFCFCF;
+    max-width: 1500px;
+    display: block;
+    margin: auto;
 }
 }
