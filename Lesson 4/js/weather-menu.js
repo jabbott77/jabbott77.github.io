@@ -15,4 +15,11 @@ window.addEventListener('load',(event)=>{
     
       classList property - https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
       */
+})
+window.addEventListener('load', (event)=>{
+    const lu = document.querySelector('#lastupdated');
+    lu.textContent = document.lastModified;
+
+    const cry = document.querySelector("#copyrightyear");
+    cry.textContent = new Date().getFullYear();
 });
