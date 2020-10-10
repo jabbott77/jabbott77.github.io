@@ -1,0 +1,131 @@
+/* Small/Phone View ***************/
+nav {
+    margin: 0 auto;
+	max-width: 760px;
+	background-color: #36454f;
+}
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+.navigation li:first-child {
+    display: block;
+}
+.menu {
+    margin-left: auto;
+    margin-right: auto;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: #C2F73F;
+	font-weight: 700;
+}
+.navigation a:hover {
+	color: white;
+	background-color: #9F33FF;
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+	display: block;
+}
+.five {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: auto;
+    margin-right: auto;
+}
+p {
+	font-size: 20px;
+}
+
+/* Media Query for medium+ views */
+@media only screen and (min-width: 32.5em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+    }
+    .five {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Sansita+Swashed&display=swap");
+
+html {
+    background-color: #41FFF2;
+}
+
+body {
+    background-color: #CFCFCF;
+    max-width: 760px;
+    display: block;
+    margin: auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Sanita Swashed', cursive;
+    color: #9F33FF;
+    text-align: center;
+}
+p, li {
+    font-family: 'Courier Prime', 'monospace';
+    color: black;
+    padding: 0em;
+}
+
+.logo {
+    max-width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer {
+    text-align: center;
+    background-color:#36454f;
+    padding: 2em;
+}
+div {
+    text-align: center;
+}
+.typhoon {
+    max-width: 60%;
+}
+.legal {
+    color: #C2F73F;
+}
+.highlight {
+    color: #C2F73F;
+}
+.byui {
+    color: #C2F73F;
+}
+.byui:hover {
+    color: #9F33FF;
+}
+.hero, .contact, .article, .day {
+    padding: 1.5em;
+}
+@media only screen and (min-width: 50em) {
+.five {
+	display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px;
+}
+}
