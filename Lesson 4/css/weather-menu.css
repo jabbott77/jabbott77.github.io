@@ -141,4 +141,12 @@ body {
     display: block;
     margin: auto;
 }
+.banner {
+    background-color:#9F33FF;
+    padding: 1.5em; 
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
 }
