@@ -144,10 +144,10 @@ body {
 .banner {
     background-color:#9F33FF;
     padding: 1.5em; 
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: cover;
     color: white;
     font-size: 20px;
+}
+.typhoon{
+    max-width: 40%;
 }
 }

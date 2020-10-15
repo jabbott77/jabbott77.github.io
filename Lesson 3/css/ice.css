@@ -1,0 +1,98 @@
+body{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 25px 25px 0 0;
+    border: 2px solid black;
+    margin-top: 3em;
+}
+.pass {
+    grid-column:1;
+    margin-top: 3em;
+    margin-left: 1em;
+    margin-bottom: -.5em;
+}
+.name {
+    grid-column: 3;
+    text-align: right;
+    margin-right: .5em;
+}
+.second {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #171425;
+    border: 2px solid black;
+}
+.depart {
+    grid-column: 1;
+    grid-row: 1;
+    color: white;
+    text-align: center;
+}
+.arrive {
+    grid-column: 3;
+    grid-row: 1;
+    color: white;
+    text-align: center;
+}
+.den {
+    grid-column: 1;
+    grid-row: 2;
+    color: white;
+    text-align: center;
+}
+.plane {
+    grid-column: 2;
+    grid-row: 2;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bos {
+    grid-column: 3;
+    grid-row:2;
+    color: white;
+    text-align: center;
+}
+.denver {
+    grid-column: 1;
+    grid-row:3;
+    color: white;
+    text-align: center;
+}
+.boston {
+    grid-column: 3;
+    grid-row: 3;
+    color: white;
+    text-align: center;
+}
+main {
+    display:grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    text-align: center;
+    background-color: #E7E7E7;
+    border: 2px solid black;
+}
+.bottom {
+    text-align: center;
+        border-radius: 0 0 25px 25px;
+        border: 2px solid black;
+}
+.bar {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+.delta {
+    margin-bottom: -3em;
+    margin-top: 1em;
+}
+.thanks {
+    margin-top: -1em;
+    margin-bottom: 2em;
+    padding: 1em;
+}
