@@ -30,7 +30,14 @@ nav {
 	color: white;
 	background-color: #9F33FF;
 }
-
+nav ul.hide{
+    display:none;
+}
+.clearfix:after{
+    content: '';
+    display: table;
+    clear: both;
+}
 /* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
   <ul class="navigation responsive">
 */

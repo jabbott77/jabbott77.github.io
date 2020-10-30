@@ -1,0 +1,309 @@
+/* Small/Phone View ***************/
+@media only screen and (min-width: 350px) {
+nav {
+    margin: 0 auto;
+	/*max-width: 760px;*/
+	background-color: #36454f;
+}
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+.navigation li:first-child {
+    display: block;
+}
+.menu {
+    margin-left: auto;
+    margin-right: auto;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: #C2F73F;
+	font-weight: 700;
+}
+.navigation a:hover {
+	color: white;
+	background-color: #9F33FF;
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+	display: block;
+}
+.fove {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    column-gap: 1px;
+}
+p {
+	font-size: 20px;
+}
+.mount{
+    width: 100%;
+    height: 300px;
+    position: relative; 
+    background-image: url(../images/mountains.jpg);
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+.weather-summary-title{
+    color:white;
+    text-align: center;
+    margin-bottom: -10px;
+}
+.weather-summary-wrapper{
+    position: absolute;
+    top:0px;
+    left:30px;
+    opacity: .8;
+    background-color: rgba(88, 139, 143, 0.8);
+    max-width: 300px;
+    box-shadow: 3px 3px 10px #00000073;
+    margin: 0 auto;
+    padding: 10px 0px 10px 0px;
+    border-radius: 25px 25px 25px 25px;
+    /*border: 2px solid black;*/
+}
+.weather-summary-paragraph{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 300px;
+}
+.list1 p{
+    color: white;
+    margin-left: -20px;
+}
+.list2 p{
+    margin-left: -50px;
+    color:#C2F73F;
+}
+.active {
+    text-decoration: underline;
+    background-color: grey;
+}
+}
+
+/* Media Query for medium+ views */
+@media only screen and (min-width: 32.5em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+    }
+    .fove {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Sansita+Swashed&display=swap");
+
+html {
+    background-color: #41FFF2;
+}
+
+body {
+    background-color: #CFCFCF;
+    max-width: 760px;
+    display: block;
+    margin: auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Sanita Swashed', cursive;
+    color: #9F33FF;
+    text-align: center;
+}
+p, li {
+    font-family: 'Courier Prime', 'monospace';
+    color: black;
+    padding: 0em;
+}
+
+.logo {
+    max-width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer {
+    text-align: center;
+    background-color:#36454f;
+    padding: 2em;
+}
+div {
+    text-align: center;
+}
+.typhoon {
+    max-width: 60%;
+}
+.legal {
+    color: #C2F73F;
+}
+.highlight {
+    color: #C2F73F;
+}
+.byui {
+    color: #C2F73F;
+}
+.byui:hover {
+    color: #9F33FF;
+}
+.hero, .contact, .article, .day {
+    padding: 1.5em;
+}
+@media only screen and (min-width: 50em) {
+.fove {
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: #9F33FF;
+}
+/*.navigation {
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left:50%; 
+    max-width: 2000px;
+}*/
+/*.forecast {
+    border: 1px solid#9F33FF;
+    padding: 30px;
+}*/
+.hero {
+    padding: 30px;
+}
+body {
+    background-color: #CFCFCF;
+    max-width: 1500px;
+    display: block;
+    margin: auto;
+}
+#banner {
+    background-color:#9F33FF;
+    padding: 1.5em; 
+    color: white;
+    font-size: 20px;
+}
+#banner:hover{
+    background-color: #CFCFCF;
+    color: #9F33FF;
+}
+.hidden{
+    display: none;
+}
+.typhoon{
+    max-width: 30%;
+    float: right;
+}
+.mount{
+    width: 80%;
+    height: 500px;
+    position: relative; 
+    background-image: url(../images/mountains.jpg);
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+.article {
+    text-align: left;
+}
+.weather-summary-title{
+    color:white;
+    text-align: center;
+    margin-bottom: -10px;
+}
+.weather-summary-wrapper{
+    position: absolute;
+    top:220px;
+    left:30px;
+    opacity: .8;
+    background-color: rgba(88, 139, 143, 0.8);
+    max-width: 400px;
+    box-shadow: 3px 3px 10px #00000073;
+    margin: 0 auto;
+    padding: 10px 0px 10px 0px;
+    border-radius: 25px 25px 25px 25px;
+    /*border: 2px solid black;*/
+}
+.weather-summary-paragraph{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 300px;
+}
+.list1 p, .list2 p{
+    font-family: "Merriweather Sans", sans-serif;
+    line-height: .5rem;
+
+}
+.list1 p{
+    color: white;
+    margin-left: -20px;
+}
+.list2 p{
+    margin-left: -50px;
+    color:#C2F73F;
+}
+.one {
+    border: 1px solid white;
+    background-color: #9F33FF;
+}
+.two {
+    border: 1px solid white;
+    background-color: #9F33FF;
+}
+.three {
+    border: 1px solid white;
+    background-color: #9F33FF;
+}
+.four {
+    border: 1px solid white;
+    background-color: #9F33FF;
+}
+.five {
+    border: 1px solid white;
+    background-color: #9F33FF;
+}
+.d1, .d2, .d3, .d4, .d5, .sunny, .windy, .snowy, .stormy, .rainy {
+    color: white;
+}
+.day {
+    margin-top: -10px;
+}
+.map {
+    float: left;
+    max-width: 70%;
+    padding: 0 20px 0 0;
+}
+.padding-bottom {
+    margin-bottom: 20px;
+}
+.social{
+    padding: .4em;
+    grid-column: 4/6;
+    grid-row: 1/2;
+}
+.pcontactinfo {
+    text-align: left;
+}
+}

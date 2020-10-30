@@ -1,7 +1,3 @@
-function toggleMenu() {
-    document.getElementById('navigation').classList.toggle('hide');
-}
-
 window.addEventListener('load',(event)=>{
     // add code here to run when page loads
     const menubutton = document.querySelector('.menu');
@@ -18,7 +14,7 @@ window.addEventListener('load',(event)=>{
       or https://www.w3schools.com/js/js_arrow_function.asp
     
       classList property - https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
-*/      
+      */
 })
 
 window.addEventListener('load', (event)=>{
@@ -27,4 +23,10 @@ window.addEventListener('load', (event)=>{
 
     const cry = document.querySelector("#copyrightyear");
     cry.textContent = new Date().getFullYear();
+
+    const b =document.querySelector("#banner");
+    today = new Date().getDay();
+    if (today==5){
+        b.style.display = "block";
+    }
 });
