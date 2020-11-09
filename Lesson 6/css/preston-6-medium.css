@@ -1,0 +1,106 @@
+    /* Media Query for medium+ views */
+    @media only screen and (min-width: 700px) {
+        img {
+            max-width: 100;
+        }
+        .navigation {
+            display: flex;
+        }
+        .navigation li {
+            display: block; /* change state in small view */
+            flex: 1 1 auto;
+        }
+        .navigation a {
+            text-align: center;
+        }
+        .navigation li:first-child {
+            display: none;
+        }
+        .fove {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+    @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Sansita+Swashed&display=swap");
+    
+    .mount{
+        width: 100%;
+        height: 300px;
+        position: relative; 
+        /*background-image: url(../images/sky.jpeg);*/
+        background-size: cover;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+    .over-medium {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 100px;
+        color: red;
+        padding: 20px;
+        max-width: 100%;
+        text-align: right;
+    }
+    .over-small {
+        display: none;
+    }
+    .over-large {
+        display: none;
+    }
+
+    html {
+        background-color: #41FFF2;
+    }
+    
+    body {
+        background-color: #CFCFCF;
+        max-width: 760px;
+        display: block;
+        margin: auto;
+    }
+    
+    h1, h2, h3 {
+        font-family: 'Sanita Swashed', cursive;
+        color: #9F33FF;
+        text-align: center;
+    }
+    p, li {
+        font-family: 'Courier Prime', 'monospace';
+        color: black;
+        padding: 0em;
+    }
+    
+    .logo {
+        max-width: 20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer {
+        text-align: center;
+        background-color:#36454f;
+        padding: 2em;
+    }
+    div {
+        text-align: center;
+    }
+    .typhoon {
+        max-width: 60%;
+    }
+    .legal {
+        color: #C2F73F;
+    }
+    .highlight {
+        color: #C2F73F;
+    }
+    .byui {
+        color: #C2F73F;
+    }
+    .byui:hover {
+        color: #9F33FF;
+    }
+    .hero, .contact, .article, .day {
+        padding: 1.5em;
+    }

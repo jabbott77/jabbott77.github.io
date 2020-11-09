@@ -1,0 +1,116 @@
+/* Small/Phone View ***************/
+@media only screen and (min-width: 500px) {
+    img {
+        max-width: 60;
+    }
+    nav {
+        margin: 0 auto;
+        /*max-width: 760px;*/
+        background-color: #36454f;
+    }
+    .navigation {
+        list-style: none;
+        padding: 0;
+    }
+    .navigation li:first-child {
+        display: block;
+    }
+    .menu {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .navigation li {
+        display: none;
+    }
+    .navigation a {
+        display: block;
+        padding: 0.75rem;
+        text-align: left;
+        text-decoration: none;
+        color: #C2F73F;
+        font-weight: 700;
+    }
+    .navigation a:hover {
+        color: white;
+        background-color: #9F33FF;
+    }
+    
+    /* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+      <ul class="navigation responsive">
+    */
+    .responsive li {
+        display: block;
+    }
+    .fove {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        column-gap: 1px;
+    }
+    p {
+        font-size: 20px;
+    }
+    .mount{
+        width: 100%;
+        height: 300px;
+        position: relative; 
+        /*background-image: url(../images/sky.jpeg);*/
+        background-size: cover;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+    .over-small {
+        position: absolute;
+        bottom: 0;
+        right: 100px;
+        color: red;
+        padding: 20px;
+        max-width: 100%;
+        text-align: right;
+    }
+    .over-medium {
+        display: none;
+    }
+    .over-large {
+        display: none;
+    }
+    .weather-summary-title{
+        color:white;
+        text-align: center;
+        margin-bottom: -10px;
+    }
+    .weather-summary-wrapper{
+        display: block;
+        position: absolute;
+        top:0px;
+        left:30px;
+        opacity: .8;
+        background-color: rgba(88, 139, 143, 0.8);
+        max-width: 300px;
+        box-shadow: 3px 3px 10px #00000073;
+        margin: 0 auto;
+        padding: 10px 0px 10px 0px;
+        border-radius: 25px 25px 25px 25px;
+        /*border: 2px solid black;*/
+    }
+    .weather-summary-paragraph{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 300px;
+    }
+    .list1 p{
+        color: white;
+        margin-left: -20px;
+    }
+    .list2 p{
+        margin-left: -50px;
+        color:#C2F73F;
+    }
+    .active {
+        text-decoration: underline;
+        background-color: grey;
+    }
+    }

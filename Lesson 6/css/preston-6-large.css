@@ -1,0 +1,158 @@
+@media only screen and (min-width: 1000px) {
+    img {
+        max-width: 100%;
+    }
+    .fove {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        background-color: #9F33FF;
+    }
+    /*.navigation {
+        width: 100vw;
+        position: relative;
+        margin-left: -50vw;
+        left:50%; 
+        max-width: 2000px;
+    }*/
+    /*.forecast {
+        border: 1px solid#9F33FF;
+        padding: 30px;
+    }*/
+    .hero {
+        padding: 30px;
+    }
+    body {
+        background-color: #CFCFCF;
+        max-width: 1500px;
+        display: block;
+        margin: auto;
+    }
+    #banner {
+        background-color:#9F33FF;
+        padding: 1.5em; 
+        color: white;
+        font-size: 20px;
+    }
+    #banner:hover{
+        background-color: #CFCFCF;
+        color: #9F33FF;
+    }
+    .hidden{
+        display: none;
+    }
+    .typhoon{
+        max-width: 30%;
+        float: right;
+    }
+    .mount{
+        width: 80%;
+        height: 500px;
+        position: relative; 
+        /*background-image: url(../images/sky.jpeg);*/
+        background-size: cover;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+    .over-large {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 100px;
+        color: red;
+        padding: 20px;
+        max-width: 100%;
+        text-align: right;
+    }
+    .over-medium{
+        display: none;
+    }
+    .over-small {
+        display: none;
+    }
+    .sky {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .article {
+        text-align: left;
+    }
+    .weather-summary-title{
+        color:white;
+        text-align: center;
+        margin-bottom: -10px;
+    }
+    .weather-summary-wrapper{
+        position: absolute;
+        top:220px;
+        left:120px;
+        opacity: .8;
+        background-color: rgba(88, 139, 143, 0.8);
+        max-width: 400px;
+        box-shadow: 3px 3px 10px #00000073;
+        margin: 0 auto;
+        padding: 10px 0px 10px 0px;
+        border-radius: 25px 25px 25px 25px;
+        /*border: 2px solid black;*/
+    }
+    .weather-summary-paragraph{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 300px;
+    }
+    .list1 p, .list2 p{
+        font-family: "Merriweather Sans", sans-serif;
+        line-height: .5rem;
+    
+    }
+    .list1 p{
+        color: white;
+        margin-left: -20px;
+    }
+    .list2 p{
+        margin-left: -50px;
+        color:#C2F73F;
+    }
+    .one {
+        border: 1px solid white;
+        background-color: #9F33FF;
+    }
+    .two {
+        border: 1px solid white;
+        background-color: #9F33FF;
+    }
+    .three {
+        border: 1px solid white;
+        background-color: #9F33FF;
+    }
+    .four {
+        border: 1px solid white;
+        background-color: #9F33FF;
+    }
+    .five {
+        border: 1px solid white;
+        background-color: #9F33FF;
+    }
+    .d1, .d2, .d3, .d4, .d5, .sunny, .windy, .snowy, .stormy, .rainy {
+        color: white;
+    }
+    .day {
+        margin-top: -10px;
+    }
+    .map {
+        float: left;
+        max-width: 70%;
+        padding: 0 20px 0 0;
+    }
+    .padding-bottom {
+        margin-bottom: 20px;
+    }
+    .social{
+        padding: .4em;
+        grid-column: 4/6;
+        grid-row: 1/2;
+    }
+    .pcontactinfo {
+        text-align: left;
+    }
+}
