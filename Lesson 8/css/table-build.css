@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+.table, tr, td, thead, tfoot {
+    border: 1px solid black;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr:nth-child(odd) {
+    background: #e7ffed;
+}
+tr:nth-child(even) {
+    background: #e7f0ed;
+}
+.heading {
+    color: white;
+}
+.head {
+    background: #7fb9c2;
+}
