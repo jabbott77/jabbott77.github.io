@@ -1,7 +1,14 @@
 /* Small/Phone View ***************/
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 200px) {
+    @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Sansita+Swashed&display=swap"); 
+    
+    .logo {
+        max-width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
     img {
-        max-width: 60;
+        max-width: 100%;
     }
     nav {
         margin: 0 auto;
@@ -113,4 +120,78 @@
         text-decoration: underline;
         background-color: grey;
     }
+    .list1 p, .list2 p{
+        font-family: "Merriweather Sans", sans-serif;
+        line-height: .5rem;
+    
     }
+    .list1 p{
+        color: white;
+        margin-left: -20px;
+    }
+    .list2 p{
+        margin-left: -50px;
+        color:#C2F73F;
+    }
+    .one {
+        border: 1px solid white;
+        background-color: #9F33FF;
+        text-align: center;
+    }
+    .two {
+        border: 1px solid white;
+        background-color: #9F33FF;
+        text-align: center;
+    }
+    .three {
+        border: 1px solid white;
+        background-color: #9F33FF;
+        text-align: center;
+    }
+    .four {
+        border: 1px solid white;
+        background-color: #9F33FF;
+        text-align: center;
+    }
+    .five {
+        border: 1px solid white;
+        background-color: #9F33FF;
+        text-align: center;
+    }
+    .d1, .d2, .d3, .d4, .d5, .sunny, .windy, .snowy, .stormy, .rainy {
+        color: white;
+    }
+    .day {
+        margin-top: -10px;
+    }
+    .map {
+        float: left;
+        max-width: 70%;
+        padding: 0 20px 0 0;
+    }
+    .padding-bottom {
+        margin-bottom: 20px;
+    }
+    .social{
+        padding: .4em;
+        grid-column: 4/6;
+        grid-row: 1/2;
+    }
+    .pcontactinfo {
+        text-align: left;
+    }
+    html {
+        background-color: #41FFF2;
+    }
+    
+    body {
+        background-color: #CFCFCF;
+    }
+    h1, h2, h3 {
+        font-family: 'Sanita Swashed', cursive;
+        color: #9F33FF;
+        text-align: center;
+    }
+
+
+}

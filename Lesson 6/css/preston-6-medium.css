@@ -1,7 +1,9 @@
     /* Media Query for medium+ views */
-    @media only screen and (min-width: 700px) {
+    @media only screen and (min-width: 500px) {
+           @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Sansita+Swashed&display=swap"); 
+           
         img {
-            max-width: 100;
+            max-width: 100%;
         }
         .navigation {
             display: flex;
@@ -19,9 +21,22 @@
         .fove {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
+            background-color: #9F33FF;
         }
-    }
-    @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Sansita+Swashed&display=swap");
+
+        .weather-summary-wrapper{
+            position: absolute;
+            top:20px;
+            left:120px;
+            opacity: .8;
+            background-color: rgba(88, 139, 143, 0.8);
+            max-width: 400px;
+            box-shadow: 3px 3px 10px #00000073;
+            margin: 0 auto;
+            padding: 0px 0px 0px 0px;
+            border-radius: 25px 25px 25px 25px;
+            /*border: 2px solid black;*/
+        }
     
     .mount{
         width: 100%;
@@ -104,3 +119,59 @@
     .hero, .contact, .article, .day {
         padding: 1.5em;
     }
+    .list1 p, .list2 p{
+        font-family: "Merriweather Sans", sans-serif;
+        line-height: .5rem;
+    
+    }
+    .list1 p{
+        color: white;
+        margin-left: -20px;
+    }
+    .list2 p{
+        margin-left: -50px;
+        color:#C2F73F;
+    }
+    .one {
+        border: 1px solid white;
+        background-color: #9F33FF;
+    }
+    .two {
+        border: 1px solid white;
+        background-color: #9F33FF;
+    }
+    .three {
+        border: 1px solid white;
+        background-color: #9F33FF;
+    }
+    .four {
+        border: 1px solid white;
+        background-color: #9F33FF;
+    }
+    .five {
+        border: 1px solid white;
+        background-color: #9F33FF;
+    }
+    .d1, .d2, .d3, .d4, .d5, .sunny, .windy, .snowy, .stormy, .rainy {
+        color: white;
+    }
+    .day {
+        margin-top: -10px;
+    }
+    .map {
+        float: left;
+        max-width: 70%;
+        padding: 0 20px 0 0;
+    }
+    .padding-bottom {
+        margin-bottom: 20px;
+    }
+    .social{
+        padding: .4em;
+        grid-column: 4/6;
+        grid-row: 1/2;
+    }
+    .pcontactinfo {
+        text-align: left;
+    }
+}

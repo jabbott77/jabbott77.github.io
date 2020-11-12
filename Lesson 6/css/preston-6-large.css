@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 700px) {
     img {
         max-width: 100%;
     }
@@ -62,7 +62,6 @@
         color: red;
         padding: 20px;
         max-width: 100%;
-        text-align: right;
     }
     .over-medium{
         display: none;
@@ -84,21 +83,21 @@
     }
     .weather-summary-wrapper{
         position: absolute;
-        top:220px;
+        top:20px;
         left:120px;
         opacity: .8;
         background-color: rgba(88, 139, 143, 0.8);
         max-width: 400px;
         box-shadow: 3px 3px 10px #00000073;
         margin: 0 auto;
-        padding: 10px 0px 10px 0px;
+        padding: 0px 0px 0px 0px;
         border-radius: 25px 25px 25px 25px;
         /*border: 2px solid black;*/
     }
     .weather-summary-paragraph{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        max-width: 300px;
+        max-width: 100%;
     }
     .list1 p, .list2 p{
         font-family: "Merriweather Sans", sans-serif;
