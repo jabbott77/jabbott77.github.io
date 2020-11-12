@@ -2,20 +2,49 @@
 
 .table, tr, td, thead, tfoot {
     border: 1px solid black;
-    font-family: 'Ubuntu', sans-serif;
-    margin-left: auto;
-    margin-right: auto;
+    font-family: 'Ubuntu', sans-serif;  
+    border: 1px solid lightgray;
+    
+
+}
+.table {
+    margin-top: 50px;
+    box-shadow: 10px 10px 10px #628ca6;
+    margin: 0 auto;
+    border: 1px solid lightgray;
 }
 
 tr:nth-child(odd) {
-    background: #e7ffed;
+    background: #e7f0ed;
 }
 tr:nth-child(even) {
-    background: #e7f0ed;
+    background: #e7ffed;
 }
 .heading {
     color: white;
 }
-.head {
-    background: #7fb9c2;
+table thead th   {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 900;
+    background-color: #7fb9c2;
+    border: 1px solid lightgray;
+}
+table tfoot tr td {
+    background-color: #7fb9c2;
+    font-size: 16px;
+    padding: 10px;
+}
+.top {
+    background-color: #628ca6;
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+    border: 1px solid lightgray;
+    padding: 5px 15px 5px 15px;
+}
+table tbody tr td {
+    padding: 5px;
+    border: 1px solid lightgray;
+    font-weight: lighter;
 }
