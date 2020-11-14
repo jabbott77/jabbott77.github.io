@@ -1,0 +1,136 @@
+/* Small/Phone View ***************/
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Sansita+Swashed&display=swap");
+@media only screen and (min-width: 350px) {
+    nav {
+        margin: 0 auto;
+        /*max-width: 760px;*/
+        background-color: #36454f;
+    }
+    .navigation {
+        list-style: none;
+        padding: 0;
+    }
+    .navigation li:first-child {
+        display: block;
+    }
+    .menu {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .navigation li {
+        display: none;
+    }
+    .navigation a {
+        display: block;
+        padding: 0.75rem;
+        text-align: left;
+        text-decoration: none;
+        color: #C2F73F;
+        font-weight: 700;
+    }
+    .navigation a:hover {
+        color: white;
+        background-color: #9F33FF;
+    }
+    
+    /* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+      <ul class="navigation responsive">
+    */
+    .responsive li {
+        display: block;
+    }
+    .list1 p{
+        color: white;
+        margin-left: -20px;
+    }
+    .list2 p{
+        margin-left: -50px;
+        color:#C2F73F;
+    }
+    .active {
+        text-decoration: underline;
+        background-color: grey;
+    }
+    html{
+        background-color: #41FFF2;
+    }
+    .map {
+        float: left;
+        max-width: 70%;
+        padding: 0 20px 0 0;
+    }
+    .padding-bottom {
+        margin-bottom: 20px;
+    }
+    .social{
+        padding: .4em;
+        grid-column: 4/6;
+        grid-row: 1/2;
+    }
+    .pcontactinfo {
+        text-align: left;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #img1 {
+        max-width: 100%;
+    }
+    #img2 {
+        max-width: 100%;
+    }
+    #img3 {
+        max-width: 100%;
+    }
+    #img4 {
+        max-width: 100%;
+    }
+    #img5 {
+        max-width: 100%;
+    }
+    #img6 {
+        max-width: 100%;
+    }
+    .logo {
+        max-width: 20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer {
+        text-align: center;
+        background-color:#36454f;
+        padding: 2em;
+    }
+    div {
+        text-align: center;
+    }
+    .legal {
+        color: #C2F73F;
+    }
+    .highlight {
+        color: #C2F73F;
+    }
+    .byui {
+        color: #C2F73F;
+    }
+    .byui:hover {
+        color: #9F33FF;
+    }
+    picture:hover {
+        box-shadow: 0 0 10px #333;
+    }
+    picture {
+        padding: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    picture img[data-src] {
+        filter: blur(0.2em);
+    }
+    picture img {
+        filter: blur(0em);
+        transition: filter 3s;
+    }
+    }

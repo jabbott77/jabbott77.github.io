@@ -3,7 +3,7 @@
 .table, tr, td, thead, tfoot {
     border: 1px solid black;
     font-family: 'Ubuntu', sans-serif;  
-    border: 1px solid lightgray;
+    border: 1px solid gray;
     
 
 }
