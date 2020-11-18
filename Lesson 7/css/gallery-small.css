@@ -91,6 +91,15 @@
     #img6 {
         max-width: 100%;
     }
+    #img7 {
+        max-width: 100%;
+    }    
+    #img8 {
+        max-width: 100%;
+    }    
+    #img9 {
+        max-width: 100%;
+    }
     .logo {
         max-width: 20%;
         display: block;
@@ -117,9 +126,9 @@
     .byui:hover {
         color: #9F33FF;
     }
-    picture:hover {
+    /*picture:hover {
         box-shadow: 0 0 10px #333;
-    }
+    }*/
     picture {
         padding: 40px;
         margin-left: auto;

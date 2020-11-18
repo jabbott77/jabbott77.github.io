@@ -1,10 +1,10 @@
 /* Small/Phone View ***************/
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Sansita+Swashed&display=swap");
 
-    
+@media only screen and (min-width: 60em) {
     /* Media Query for medium+ views */
-    @media only screen and (min-width: 50em) {
-        .navigation {
+    {   
+    .navigation {
             display: flex;
         }
         .navigation li {
@@ -68,7 +68,6 @@
     .byui:hover {
         color: #9F33FF;
     }
-    @media only screen and (min-width: 50em) {
     body {
         background-color: #CFCFCF;
         max-width: 1500px;
@@ -119,7 +118,7 @@
     }
     .gallery {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     #img1 {
         max-width: 100%;
@@ -137,6 +136,15 @@
         max-width: 100%;
     }
     #img6 {
+        max-width: 100%;
+    }
+    #img7 {
+        max-width: 100%;
+    }    
+    #img8 {
+        max-width: 100%;
+    }    
+    #img9 {
         max-width: 100%;
     }
     .logo {
@@ -179,5 +187,4 @@
     picture img {
         filter: blur(0em);
         transition: filter 3s;
-    }
     }
