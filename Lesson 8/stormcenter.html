@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+    <head>
+        <title>Weather the Weather</title>
+        <meta charset="utf-8">
+        <meta name='description' content="Design Principles Assignment"> 
+        <meta name='viewport' content='width=device-width, intitial-scale=1.0'>
+        <link rel='stylesheet' href='css/stormcenter-small.css'>
+        <link rel='stylesheet' href='css/stormcenter-medium.css'>
+        <link rel='stylesheet' href='css/stormcenter-large.css'>
+        <script src='js/preston-6.js'></script>
+        <link rel="shortcut icon" href="favicon.ico">
+    </head>
+    <body>
+        <header>
+            <div id = "banner" class = "hidden">Preston Pancakes in the Park! 8:00 a.m. Saturday at the city park pavilion.</div>
+            <h1 class = "title">Weather the Weather</h1>
+            <h2 class = "motto">"No Matter the Weather, We'll Weather it Together"</h2>
+            <img class = "logo" src = "images/Weather Logo 8.png" alt = "logo"> 
+            <nav class = "clearfix">
+                <ul class="navigation">
+                    <li><a class="menu" href="#">Weather Menu</a></li>
+                    <li><a href="#">Bangkok/Ayutthaya</a></li>
+                    <li><a href="#">Chiang Mai</a></li>
+                    <li><a href="#">Chonburi</a></li>
+                    <li><a href="#">Sisaket</a></li>
+                    <li class ='active'><a href="#">Roi Et(Storm Center)</a></li>
+                    <li><a href="#">Buriram(Gallery)</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form action='thanks.html'>
+                <h2 class='contact'>Contact Information</h2>
+                <label for='name'>Your Name:</label>
+                <input type='text' id='name' name='name' minlength='2' maxlength='50' size='20' pattern='[A-Za-z][A-Za-z]+ [A-Za-z][A-Za-z]+' required>
+                <label for='email'>Email Address:</label>
+                <input type='email' id='email' name='email' placeholder='address@domain.com' size='20'>
+                <label for='phone'>Phone Number (10 digit):</label>
+                <input type='tel' id='phone' name='phone' minlength='10' size='20' required>
+                <label for='zip'>ZIP Code</label>
+                <input type='number' id='zip' name='zip' minlength='5' size='20' required>
+                <h2 class='report'>Storm Report</h2>
+                <label for='date'>Storm Date:</label>
+                <input type='date' id='date' name='date' size='20'>
+                <label for='type'>Storm Type:</label>
+                <input list='storm-type' id='type' name='type' required>
+                <datalist id='storm-type'>
+                    <option value='Flash Flood'></option>
+                    <option value='Hail'></option>
+                    <option value='Hurricane'></option>
+                    <option value='Thunderstorm'></option>
+                    <option value='Tornado'></option>
+                    <option value='Other (please comment below)'></option>
+                </datalist>
+                <label for='rating'>Storm Severity (1 - 10):</label>
+                <input type='range' id='rating' value='5' min='1' max='10' step='1' oninput='adjustRating(this.value)' onchange='adjustRating(this.value)'>
+                <span id='ratingvalue'>5</span>
+                <label for='region'>Storm Region:</label>
+                <select id='region'>
+                    <option selected disabled>Select Region</option>
+                    <option value='ba'>Bankgok/Ayutthaya</option>
+                    <option value='cm'>Chiang Mai</option>
+                    <option value='cb'>Chonburi</option>    
+                    <option value='sk'>Sisaket</option>
+                    <option value='re'>Roi Et</option>
+                    <option value='bu'>Buriram</option>
+                </select>
+                <p class = "danger">Are you in danger?<br> Do you or others need help?</p>
+                <div class='radio'>
+                    <div class='radiobutton'>
+                        <label for='yes'>Yes:</label>
+                        <input type='radio' id='yes' name='danger' value='yes' checked>
+                    </div>
+                    <div class='radiobutton'>
+                        <label for='no'>No:</label>
+                        <input type='radio' id='no' name='danger' value='no'>
+                    </div>
+                    <div class='radiobutton'>
+                        <label for='no'>Maybe:</label>
+                        <input type='radio' id='maybe' name='danger' value='maybe'>
+                    </div>
+                    <div class='radiobutton'>
+                        <label for='other'>Other:</label>
+                        <input type='other' id='other' name='danger' value='explain your situation'>
+                    </div>
+                </div>
+                <div class='textfield'>
+                    <textarea name='comments' rows='10' cols='40' max='500' placeholder='Additional Comments or Details Related to the Storm (max 500 characters):'></textarea>
+                </div>
+                <input type='submit' class='button' value='Send Report'>
+                <h4 class = 'help'>For us to help you, please report specific information listed in this page to help us better
+                    understand the severity of the storm and how we can utilize our resources for your and others' benefit.<br> 
+                    Please, fill this out honestly, so we can help as many lives as possible. Thank you!
+                </h4>
+            </form>
+        </main>
+    </body>
+    <footer>
+        <p class='legal'>&copy; <span id='copyrightyear'></span> | Jaren L. Abbott | Illinois | <a class = "byui" href='https://www.byui.edu/online'>BYUI Online Learning</a></p>
+        <p class='highlight'> Last Updated: <span id='lastupdated'></span><p>
+    </footer> 
+</html>

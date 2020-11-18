@@ -1,0 +1,144 @@
+/* Small/Phone View ***************/
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Sansita+Swashed&display=swap");
+
+@media only screen and (min-width: 60em) {
+    /* Media Query for medium+ views */
+        .navigation {
+            display: flex;
+        }
+        .navigation li {
+            display: block; /* change state in small view */
+            flex: 1 1 auto;
+        }
+        .navigation a {
+            text-align: center;
+        }
+        .navigation li:first-child {
+            display: none;
+        }
+    }
+    html {
+        background-color: #41FFF2;
+    }
+    
+    body {
+        background-color: #CFCFCF;
+        max-width: 760px;
+        display: block;
+        margin: auto;
+    }
+    
+    h1, h2, h3, figcaption {
+        font-family: 'Sanita Swashed', cursive;
+        color: #9F33FF;
+        text-align: center;
+    }
+    p, li {
+        font-family: 'Courier Prime', 'monospace';
+        color: black;
+        padding: 0em;
+    }
+    
+    .logo {
+        max-width: 20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer {
+        text-align: center;
+        background-color:#36454f;
+        padding: 2em;
+    }
+    div {
+        text-align: center;
+    }
+    .legal {
+        color: #C2F73F;
+    }
+    .highlight {
+        color: #C2F73F;
+    }
+    .byui {
+        color: #C2F73F;
+    }
+    .byui:hover {
+        color: #9F33FF;
+    }
+    body {
+        background-color: #CFCFCF;
+        max-width: 1500px;
+        display: block;
+        margin: auto;
+    }
+    #banner {
+        background-color:#9F33FF;
+        padding: 1.5em; 
+        color: white;
+        font-size: 20px;
+    }
+    #banner:hover{
+        background-color: #CFCFCF;
+        color: #9F33FF;
+    }
+    .hidden{
+        display: none;
+    }
+    .list1 p, .list2 p{
+        font-family: "Merriweather Sans", sans-serif;
+        line-height: .5rem;
+    
+    }
+    .list1 p{
+        color: white;
+        margin-left: -20px;
+    }
+    .list2 p{
+        margin-left: -50px;
+        color:#C2F73F;
+    }
+    .map {
+        float: left;
+        max-width: 70%;
+        padding: 0 20px 0 0;
+    }
+    .padding-bottom {
+        margin-bottom: 20px;
+    }
+    .social{
+        padding: .4em;
+        grid-column: 4/6;
+        grid-row: 1/2;
+    }
+    .pcontactinfo {
+        text-align: left;
+    }
+    .logo {
+        max-width: 20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer {
+        text-align: center;
+        background-color:#36454f;
+        padding: 2em;
+    }
+    div {
+        text-align: center;
+    }
+    .legal {
+        color: #C2F73F;
+    }
+    .highlight {
+        color: #C2F73F;
+    }
+    .byui {
+        color: #C2F73F;
+    }
+    .byui:hover {
+        color: #9F33FF;
+    }
+    picture:hover {
+        box-shadow: 0 0 10px #333;
+    }

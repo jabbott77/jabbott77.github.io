@@ -3,6 +3,7 @@
 @media only screen and (min-width: 350px) {
     nav {
         margin: 0 auto;
+        /*max-width: 760px;*/
         background-color: #36454f;
     }
     .navigation {
@@ -31,10 +32,6 @@
         color: white;
         background-color: #9F33FF;
     }
-    
-    /* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
-      <ul class="navigation responsive">
-    */
     .responsive li {
         display: block;
     }
@@ -69,28 +66,6 @@
     .pcontactinfo {
         text-align: left;
     }
-    .gallery {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    #img1 {
-        max-width: 100%;
-    }
-    #img2 {
-        max-width: 100%;
-    }
-    #img3 {
-        max-width: 100%;
-    }
-    #img4 {
-        max-width: 100%;
-    }
-    #img5 {
-        max-width: 100%;
-    }
-    #img6 {
-        max-width: 100%;
-    }
     .logo {
         max-width: 20%;
         display: block;
@@ -117,19 +92,4 @@
     .byui:hover {
         color: #9F33FF;
     }
-    picture:hover {
-        box-shadow: 0 0 10px #333;
-    }
-    picture {
-        padding: 40px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    picture img[data-src] {
-        filter: blur(0.2em);
-    }
-    picture img {
-        filter: blur(0em);
-        transition: filter 3s;
-    }
-    }
+}
