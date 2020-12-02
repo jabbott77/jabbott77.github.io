@@ -8,15 +8,15 @@ weatherRequest.onload = function() {
     console.log(weatherData);
 
 
-    let currentCondition = weatherData.weather[0].main;
+    let current = weatherData.weather[0].main;
     let temp = Math.round(weatherData.main.temp, 0);
-    let humidity = Math.round(weatherData.main.humidity, 0);
+    let humid = Math.round(weatherData.main.humidity, 0);
     let windspeed = weatherData.wind.speed;
     let imageConditions = 'https://openweathermap.org/weather-conditions';
 
-    document.getElementById('current').innerHTML = currentCondition;
+    document.getElementById('current').innerHTML = current;
     document.getElementById('temp').innerHTML = temp;
-    document.getElementById('humid').innerHTML = humidity;
+    document.getElementById('humid').innerHTML = humid;
     document.getElementById('windspeed').innerHTML = windspeed;
     document.getElementById('windChill').innerHTML = getWindChill();
 
@@ -83,7 +83,7 @@ forecastRequest.onload = function() {
 
     let imageWeather = 'https://openweathermap.org/img/w/';
     let forecastArray = forecastData.list;
-    let dayOne, dayTwo, dayThree, dayFour, dayFive;
+    let day1, day2, day3, day4, day5;
     let z = 0;
 
     for (let i = 0; i < forecastArray.length; i++) {
@@ -92,19 +92,19 @@ forecastRequest.onload = function() {
         if (y == true) {
             switch (z) {
                 case 0:
-                    dayOne = forecastData.list[i];
+                    day1 = forecastData.list[i];
                     break;
                 case 1:
-                    dayTwo = forecastData.list[i];
+                    day2 = forecastData.list[i];
                     break;
                 case 2:
-                    dayThree = forecastData.list[i];
+                    day3 = forecastData.list[i];
                     break;
                 case 3:
-                    dayFour = forecastData.list[i];
+                    day4 = forecastData.list[i];
                     break;
                 case 4:
-                    dayFive = forecastData.list[i];
+                    day5 = forecastData.list[i];
                     break;
                 default:
                     break;
@@ -114,41 +114,29 @@ forecastRequest.onload = function() {
     }
 
 
-    document.getElementById('day-1').innerHTML = findDayOfWeek(dayOne.dt_txt);
-    document.getElementById('day-2').innerHTML = findDayOfWeek(dayTwo.dt_txt);
-    document.getElementById('day-3').innerHTML = findDayOfWeek(dayThree.dt_txt);
-    document.getElementById('day-4').innerHTML = findDayOfWeek(dayFour.dt_txt);
-    document.getElementById('day-5').innerHTML = findDayOfWeek(dayFive.dt_txt);
+    document.getElementById('day-1').innerHTML = findDayOfWeek(day1.dt_txt);
+    document.getElementById('day-2').innerHTML = findDayOfWeek(day2.dt_txt);
+    document.getElementById('day-3').innerHTML = findDayOfWeek(day3.dt_txt);
+    document.getElementById('day-4').innerHTML = findDayOfWeek(day4.dt_txt);
+    document.getElementById('day-5').innerHTML = findDayOfWeek(day5.dt_txt);
 
-    document.getElementById('high-1').innerHTML = Math.round(dayOne.main.temp_max, 0) + '&deg;';
-    document.getElementById('high-2').innerHTML = Math.round(dayTwo.main.temp_max, 0) + '&deg;';
-    document.getElementById('high-3').innerHTML = Math.round(dayThree.main.temp_max, 0) + '&deg;';
-    document.getElementById('high-4').innerHTML = Math.round(dayFour.main.temp_max, 0) + '&deg;';
-    document.getElementById('high-5').innerHTML = Math.round(dayFive.main.temp_max, 0) + '&deg;';
+    document.getElementById('high-1').innerHTML = Math.round(day1.main.temp_max, 0) + '&deg;';
+    document.getElementById('high-2').innerHTML = Math.round(day2.main.temp_max, 0) + '&deg;';
+    document.getElementById('high-3').innerHTML = Math.round(day3.main.temp_max, 0) + '&deg;';
+    document.getElementById('high-4').innerHTML = Math.round(day4.main.temp_max, 0) + '&deg;';
+    document.getElementById('high-5').innerHTML = Math.round(day5.main.temp_max, 0) + '&deg;';
 
-    document.getElementById('img-1').setAttribute('src', imageWeather + dayOne.weather[0].icon + '.png');
-    document.getElementById('img-2').setAttribute('src', imageWeather + dayTwo.weather[0].icon + '.png');
-    document.getElementById('img-3').setAttribute('src', imageWeather + dayThree.weather[0].icon + '.png');
-    document.getElementById('img-4').setAttribute('src', imageWeather + dayFour.weather[0].icon + '.png');
-    document.getElementById('img-5').setAttribute('src', imageWeather + dayFive.weather[0].icon + '.png');
+    document.getElementById('img-1').setAttribute('src', imageWeather + day1.weather[0].icon + '.png');
+    document.getElementById('img-2').setAttribute('src', imageWeather + day2.weather[0].icon + '.png');
+    document.getElementById('img-3').setAttribute('src', imageWeather + day3.weather[0].icon + '.png');
+    document.getElementById('img-4').setAttribute('src', imageWeather + day4.weather[0].icon + '.png');
+    document.getElementById('img-5').setAttribute('src', imageWeather + day5.weather[0].icon + '.png');
 
-    document.getElementById('img-1').setAttribute('alt', dayOne.weather[0].description);
-    document.getElementById('img-2').setAttribute('alt', dayOne.weather[0].description);
-    document.getElementById('img-3').setAttribute('alt', dayOne.weather[0].description);
-    document.getElementById('img-4').setAttribute('alt', dayOne.weather[0].description);
-    document.getElementById('img-5').setAttribute('alt', dayOne.weather[0].description);
-
-    document.getElementById('weather-1').innerHTML = dayOne.weather[0].main;
-    document.getElementById('weather-2').innerHTML = dayTwo.weather[0].main;
-    document.getElementById('weather-3').innerHTML = dayThree.weather[0].main;
-    document.getElementById('weather-4').innerHTML = dayFour.weather[0].main;
-    document.getElementById('weather-5').innerHTML = dayFive.weather[0].main;
-
-    document.getElementById('low-1').innerHTML = Math.round(dayOne.main.temp_min, 0) + '&deg;';
-    document.getElementById('low-2').innerHTML = Math.round(dayTwo.main.temp_min, 0) + '&deg;';
-    document.getElementById('low-3').innerHTML = Math.round(dayThree.main.temp_min, 0) + '&deg;';
-    document.getElementById('low-4').innerHTML = Math.round(dayFour.main.temp_min, 0) + '&deg;';
-    document.getElementById('low-5').innerHTML = Math.round(dayFive.main.temp_min, 0) + '&deg;';
+    document.getElementById('weather-1').innerHTML = day1.weather[0].main;
+    document.getElementById('weather-2').innerHTML = day2.weather[0].main;
+    document.getElementById('weather-3').innerHTML = day3.weather[0].main;
+    document.getElementById('weather-4').innerHTML = day4.weather[0].main;
+    document.getElementById('weather-5').innerHTML = day5.weather[0].main;
 }
 window.addEventListener('load',(event)=>{
     // add code here to run when page loads
