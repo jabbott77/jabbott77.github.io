@@ -107,6 +107,10 @@
         border: 1px double #C2F73F;
         color: #C2F73F;
     }
+    .active {
+        text-decoration: underline;
+        background-color: grey;
+    }    
     }
     
     /* Media Query for medium+ views */
@@ -311,4 +315,8 @@
     .pcontactinfo {
         text-align: left;
     }
+    .active {
+        text-decoration: underline;
+        background-color: grey;
+    }    
     }
