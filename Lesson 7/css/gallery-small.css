@@ -141,4 +141,10 @@
         filter: blur(0em);
         transition: filter 3s;
     }
+    .gallery {
+        background-color: #CFCFCF;
+    }
+    ul.navigation {
+        margin-bottom: -.1px;
+    }
     }

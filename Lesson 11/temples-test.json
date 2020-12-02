@@ -1,0 +1,16 @@
+{
+    "temples":[
+    {
+        "Idaho Falls Temple":{
+        "Name":"Idaho Falls",
+        "Phone": "555-555-5555" 
+    }
+    },
+    {
+        "Rexburg Temple": {
+            "Name":"Rexburg",
+            "Phone":"555-111-2222"
+        }
+    }
+]
+}
