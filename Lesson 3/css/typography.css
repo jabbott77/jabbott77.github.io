@@ -16,10 +16,20 @@ h1, h2, h3 {
     color: #9F33FF;
     text-align: center;
 }
-p, li {
+.h5, .h25 {
+	font-family: 'Sanita Swashed', cursive;
+	text-align: center;
+}
+p, li, .nav5, .h35, .p5 {
     font-family: 'Courier Prime', 'monospace';
     color: black;
-    padding: 0em;
+	padding: 0em;
+}
+ .h24, .h34, .h4 {
+	color: #9F33FF;
+}
+.nav4 {
+	color: #C2F73F;
 }
 
 .logo {
@@ -85,6 +95,34 @@ div {
     padding: 0em;
     margin-right: auto;
     margin-left: auto;
+}
+footer {
+	text-align: center;
+	background-color:#36454f;
+	padding: 2em;
+}
+div {
+	text-align: center;
+}
+.legal {
+	color: #C2F73F;
+}
+.highlight {
+	color: #C2F73F;
+}
+.byui {
+	color: #C2F73F;
+}
+.byui:hover {
+	color: #9F33FF;
+} 
+.map {
+	float: left;
+	max-width: 70%;
+	padding: 0 20px 0 0;
+}
+.padding-bottom {
+	margin-bottom: 20px;
 }
 @media only screen and (min-width: 200px) {
 	/* Horizontal Menu Examples */

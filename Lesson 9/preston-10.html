@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+    <head>
+        <title>Weather the Weather</title>
+        <meta charset="utf-8">
+        <meta name='description' content="Design Principles Assignment"> 
+        <meta name='viewport' content='width=device-width, intitial-scale=1.0'>
+        <link rel='stylesheet' href='css/index-large.css'>
+        <link rel='stylesheet' href='css/index.css'>
+        <link rel="shortcut icon" href="favicon.ico">
+        <script src ='preston-10.js'></script>
+    </head>
+    <body>
+        <header>
+            <div id = "banner" class = "hidden">Preston Pancakes in the Park! 8:00 a.m. Saturday at the city park pavilion.</div>
+            <h1 class = "title">Weather the Weather</h1>
+            <h2 class = "motto">"No Matter the Weather, We'll Weather it Together"</h2>
+            <img class = "logo" src = "images/Weather Logo 8.png" alt = "logo"> 
+            <nav class = "clearfix">
+                <nav class = "clearfix">
+                    <ul class="navigation">
+                        <li><a class="menu" href="#">Weather Menu</a></li>
+                        <li class = "active"><a href="https://jabbott77.github.io/Lesson%209/index.html#">Chiang Mai(Home)</a></li>
+                        <li><a href="https://jabbott77.github.io/Lesson%206/preston.html">Chonburi(Preston)</a></li>
+                        <li><a href="#">Sisaket</a></li>
+                        <li ><a href="#">Bangkok/Ayutthaya</a></li>
+                        <li ><a href="https://jabbott77.github.io/Lesson%208/stormcenter.html">Roi Et(Storm Center)</a></li>
+                        <li ><a href="https://jabbott77.github.io/Lesson%207/gallery.html">Buriram(Gallery)</a></li>
+                    </ul>
+            </nav>
+        </header>
+        <main>
+            <div class = "mount">
+                <div class="weather-summary-wrapper">
+                    <h3 class="weather-summary-title">
+                        Weather Summary
+                    </h3>
+                    <div class="weather-summary-paragraph">
+                        <ul class="list1">
+                            <p>Current:
+                                <span id = 'current-weather'></span>
+                            </p>
+                            <p>High:
+                                <span id = 'temp'></span>
+                            </p>
+                            <p>Wind Chill:
+                                <span id = 'windChill'></span>
+                            </p>
+                            <p>Humidity:
+                                <span id = 'humid'></span>
+                            </p>
+                            <p>Wind Speed:
+                                <span id = 'windspeed'></span>
+                            </p>
+                        </ul>
+                        <!--<ul class="list2">
+                            <p>Windy</p>
+                            <p>49&#8457</p>
+                            <p>26&#8457</p>
+                            <p>76%</p>
+                            <p>9mph</p>
+                        </ul>-->
+                    </div>
+                </div>
+        </div>
+    </div>
+            <div class = "hero"><h2>Hero Image with Weather Summary</h1>
+                <img class = "typhoon" src = "images/typhoon1.jpg">
+                <p>This image depicts the devastation that is occurring in the southern and southeastern areas, towards Chonburi, of Thailand. 
+                This typhoon has strong winds that has caused mass destruction to where all people in the vicinity should take shelter immediately.</p> 
+            </div>
+            <h2 class = "day">Five Day Forecast</h2><div class = "five">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th id='day-1'></th>
+                            <th id='day-2'></th>
+                            <th id='day-3'></th>
+                            <th id='day-4'></th>
+                            <th id='day-5'></th>
+                        </tr>
+                        <tr>
+                            <td><img id="img-1"></td>
+                            <td><img id="img-2"></td>
+                            <td><img id="img-3"></td>
+                            <td><img id="img-4"></td>
+                            <td><img id="img-5"></td>
+                        </tr>
+                        <tr>
+                            <td id="high-1"></td>
+                            <td id="high-2"></td>
+                            <td id="high-3"></td>
+                            <td id="high-4"></td>
+                            <td id="high-5"></td>
+                        </tr>
+                        <tr>
+                            <td id="condition-1"></td>
+                            <td id="condition-2"></td>
+                            <td id="condition-3"></td>
+                            <td id="condition-4"></td>
+                            <td id="condition-5"></td>
+                        </tr>
+                        <tr>
+                            <td id="low-1"></td>
+                            <td id="low-2"></td>
+                            <td id="low-3"></td>
+                            <td id="low-4"></td>
+                            <td id="low-5"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            <div class = "article"><h2>Article</h2><p class = "particle">We are currently monitoring the situation, but a massive typhoon has landed on the southern parts of Thailand.
+                Many natives haven't seen this bad of a storm for decades. The winds have measured out to about 90-100 miles per hour which has caused major destruction along its path.
+                We will continue to give you up-to-date information on the situation and the people affected. Our hearts and prayers go out to these people, their families, and their safety during these turbulent times. 
+            </p></div>
+            <div class = "contact"><h2>Contact Information</h2>
+                <p class = "pcontactinfo">If you would like to know how to help contact this number:<br>
+                1 (800) 962-5340<br><br>
+                Be sure to look at our website or download our app for up-to-date information on the weather and any changes.</p></div>
+        </main>
+    </body>
+    <footer>
+        <p class='legal'>&copy; <span id='copyrightyear'></span> | Jaren L. Abbott | Illinois | <a class = "byui" href='https://www.byui.edu/online'>BYUI Online Learning</a></p>
+        <p class='highlight'> Last Updated: <span id='lastupdated'></span><p>
+    </footer>  
+    <script src ="preston-10.js"></script>
+</html>

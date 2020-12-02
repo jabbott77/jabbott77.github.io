@@ -1,17 +1,17 @@
 /* Small/Phone View ***************/
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Sansita+Swashed&display=swap");
-@media only screen and (min-width:45em) {   
+    @media only screen and (min-width: 40em) {   
     #towns {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        }
+        grid-template-columns: 1fr;
+    }
         #towns section {
             display: block;
             margin-top: 10px;
         }
         #towns section img {
             padding: 0;
-            margin: 10px 0;
+            margin: 0 0;
         }
         #towns section:nth-child(even) img {
             grid-column: 1;
@@ -22,6 +22,9 @@
         margin: 0 auto;
         /*max-width: 760px;*/
         background-color: #36454f;
+    }
+    hr {
+        color: #C2F73F;
     }
     .navigation {
         list-style: none;
@@ -93,8 +96,6 @@
     .pcontactinfo {
         text-align: left;
     }
-
-
     footer {
         text-align: center;
         background-color:#36454f;
@@ -146,8 +147,4 @@
     p {
         color: #41FFF2;
     }
-    hr {
-        color: #C2F73F;
-    }
-
 }

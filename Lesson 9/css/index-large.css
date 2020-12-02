@@ -30,7 +30,9 @@
         display: block;
         margin: auto;
     }
-    
+    hr {
+        background-color: #C2F73F;
+    }
     h1, h2, h3, figcaption {
         font-family: 'Sanita Swashed', cursive;
         color: #9F33FF;
@@ -38,7 +40,7 @@
     }
     p, li {
         font-family: 'Courier Prime', 'monospace';
-        color: black;
+        color: white;
         padding: 0em;
     }
     

@@ -76,6 +76,51 @@ nav ul {
 footer {
     text-align: center;
 }
+.cprimary {
+	color: #41FFF2;
+}
+.csecondary {
+	color: #36454f;
+}
+.caccent1 {
+	color: #9F33FF;
+}
+.caccent2 {
+	color: #C2F73F;
+}
+table {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+}
+footer {
+	text-align: center;
+	background-color:#36454f;
+	padding: 2em;
+}
+div {
+	text-align: center;
+}
+.legal {
+	color: #C2F73F;
+}
+.highlight {
+	color: #C2F73F;
+}
+.byui {
+	color: #C2F73F;
+}
+.byui:hover {
+	color: #9F33FF;
+} 
+.map {
+	float: left;
+	max-width: 70%;
+	padding: 0 20px 0 0;
+}
+.padding-bottom {
+	margin-bottom: 20px;
+}
 @media only screen and (min-width: 200px) {
 	/* Horizontal Menu Examples */
 	/* Flex *********************/
