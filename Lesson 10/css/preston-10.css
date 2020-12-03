@@ -1,4 +1,5 @@
 /* Small/Phone View ***************/
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Sansita+Swashed&display=swap");
 @media only screen and (min-width: 350px) {
     nav {
         margin: 0 auto;
@@ -26,6 +27,7 @@
         text-decoration: none;
         color: #C2F73F;
         font-weight: 700;
+        text-align:center;
     }
     .navigation a:hover {
         color: white;
@@ -114,6 +116,7 @@
     }
     
     /* Media Query for medium+ views */
+    @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Sansita+Swashed&display=swap");
     @media only screen and (min-width: 32.5em) {
         .navigation {
             display: flex;
@@ -133,8 +136,6 @@
             grid-template-columns: 1fr 1fr 1fr;
         }
     }
-    @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Sansita+Swashed&display=swap");
-    
     html {
         background-color: #41FFF2;
     }
