@@ -43,3 +43,10 @@ window.addEventListener('load', (event)=>{
       wc.textContent = "N/A"
     }
   })
+  WebFont.load({
+    google: {
+      families: [
+         'Sanita Swashed'
+      ]
+    }
+  });

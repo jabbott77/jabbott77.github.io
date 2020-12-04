@@ -1,5 +1,5 @@
 /* Small/Phone View ***************/
-@media only screen and (min-width: 350px) {
+@media only screen and (min-width: 300px) {
 nav {
     margin: 0 auto;
 	/*max-width: 760px;*/
@@ -93,6 +93,9 @@ p {
 .active {
     text-decoration: underline;
     background-color: grey;
+}
+.map {
+    max-width: 50%;
 }
 }
 
@@ -292,7 +295,7 @@ body {
 }
 .map {
     float: left;
-    max-width: 70%;
+    max-width: 50%;
     padding: 0 20px 0 0;
 }
 .padding-bottom {

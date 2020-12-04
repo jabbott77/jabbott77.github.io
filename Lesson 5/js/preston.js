@@ -29,4 +29,11 @@ window.addEventListener('load', (event)=>{
     if (today==5){
         b.style.display = "block";
     }
-});
+})
+WebFont.load({
+    google: {
+      families: [
+         'Sanita Swashed'
+      ]
+    }
+  });
