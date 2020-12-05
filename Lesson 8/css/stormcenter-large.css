@@ -3,7 +3,10 @@
 
 @media only screen and (min-width: 900px) {
     /* Media Query for medium+ views */
-        .navigation {
+    .hidden{
+        display: none;
+    }    
+    .navigation {
             display: flex;
         }
         .navigation li {

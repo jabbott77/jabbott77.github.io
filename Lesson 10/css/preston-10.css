@@ -1,6 +1,12 @@
 /* Small/Phone View ***************/
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Sansita+Swashed&display=swap");
 @media only screen and (min-width: 300px) {
+    .hidden{
+        display: none;
+    }
+    .hidden{
+        display: none;
+    }
     nav {
         margin: 0 auto;
         /*max-width: 760px;*/
@@ -118,6 +124,9 @@
     /* Media Query for medium+ views */
     @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Sansita+Swashed&display=swap");
     @media only screen and (min-width: 32.5em) {
+        .hidden{
+            display: none;
+        }
         .navigation {
             display: flex;
         }

@@ -147,4 +147,7 @@
     ul.navigation {
         margin-bottom: -.1px;
     }
+    .hidden{
+        display: none;
+    }
     }

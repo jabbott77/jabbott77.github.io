@@ -23,6 +23,9 @@
     html {
         background-color: #41FFF2;
     }
+    .hidden{
+        display: none;
+    }
     
     body {
         background-color: #CFCFCF;
