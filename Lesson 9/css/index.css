@@ -1,6 +1,6 @@
 /* Small/Phone View ***************/
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Sansita+Swashed&display=swap");
-    @media only screen and (min-width: 40em) {   
+    @media only screen and (min-width: 300px) {   
     #towns {
         display: grid;
         grid-template-columns: 1fr;

@@ -331,9 +331,9 @@
     .day {
         margin-top: -10px;
     }
-    .map {
+    .fmap {
         float: left;
-        max-width: 70%;
+        max-width: 80%;
         padding: 0 20px 0 0;
     }
     .padding-bottom {
