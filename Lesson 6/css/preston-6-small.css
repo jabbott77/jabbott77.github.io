@@ -10,6 +10,9 @@
     img {
         max-width: 100%;
     }
+    main{
+        background-color:#CFCFCF;
+    }
     nav {
         margin: 0 auto;
         /*max-width: 760px;*/

@@ -8,6 +8,9 @@
         .navigation {
             display: flex;
         }
+        main{
+            background-color:#CFCFCF;
+        }
         .navigation li {
             display: block; /* change state in small view */
             flex: 1 1 auto;
