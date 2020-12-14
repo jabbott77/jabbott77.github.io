@@ -1,5 +1,5 @@
 /* Small/Phone View ***************/
-@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Sansita+Swashed&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@500&family=Dancing+Script:wght@500&display=swap');
 @media only screen and (min-width: 350px) {
     .hidden{
         display: none;
@@ -63,10 +63,6 @@
     margin: 0 auto;
     box-sizing: border-box;
     text-align: center;
-    }
-    main {
-        max-width: 1440px;
-        margin: 0 auto;
     }
     form {
         display: grid;

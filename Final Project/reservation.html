@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+    <head>
+        <title>Celestial Comfort</title>
+        <meta charset="utf-8">
+        <meta name='description' content="Final Project"> 
+        <meta name='viewport' content='width=device-width, intitial-scale=1.0'>
+        <link rel='stylesheet' href='css/reservation.css'>
+        <link rel="shortcut icon" href="cc.ico">
+        <script src = "js/index.js"></script>
+    </head>
+    <body>
+        <header>
+             <img class = "logo" src = "images/cclogo.png" alt = "logo">
+                       
+            <h2 class = "motto">"Comfort That Defies All Description"</h2>
+            <nav class = "clearfix">
+                    <ul class = "navigation">
+                        <li><a class="menu" href="#">Menu</a></li>
+                        <li ><a href="https://jabbott77.github.io/Lesson%209/index-9.html">Home</a></li>
+                        <li ><a href="https://jabbott77.github.io/Lesson%209/index-9.html">Temples</a></li>
+                        <li ><a href="https://jabbott77.github.io/Lesson%209/index-9.html">Services</a></li>
+                        <li ><a href="https://jabbott77.github.io/Lesson%209/index-9.html">Reservation</a></li>
+                        <li ><a href="https://jabbott77.github.io/Lesson%209/index-9.html">Contact</a></li>
+                    </ul>                        
+            </nav>                        
+            <h1 class = "title">Celestial Comfort</h1> 
+        </header>
+        <main>
+            <form action='thanks.html'>
+                <h2 class='contact'>Contact Information</h2>
+                <label for='name'>Your Name:</label>
+                <input type='text' id='name' name='name' minlength='2' maxlength='50' size='20' pattern='[A-Za-z][A-Za-z]+ [A-Za-z][A-Za-z]+' required>
+                <label for='email'>Email Address:</label>
+                <input type='email' id='email' name='email' placeholder='address@domain.com' size='20'>
+                <label for='phone'>Phone Number (10 digit):</label>
+                <input type='tel' id='phone' name='phone' minlength='10' size='20' required>
+                <label for='home'>Home state or country:</label>
+                <input type='text' id='home' name='home' minlength='2' maxlength='50' size='20' pattern='[A-Za-z][A-Za-z]+ [A-Za-z][A-Za-z]+' required>
+                <label for='zip'>ZIP Code</label>
+                <input type='number' id='zip' name='zip' minlength='5' size='20' required>
+                <h2 class='report'>Your Stay</h2>
+                <label for='reservation'>Reservation Date:</label>
+                <input type='date' id='reservation' name='reservation' size='20'>
+                <label for='checkout'>Checkout Date:</label>
+                <input type='date' id='checkout' name='checkout' size='20'>
+                <label for='location'>Hotel Location(please type name of state or country):</label>
+                <input type='text' id='location' name='location' minlength='2' maxlength='50' size='20' pattern='[A-Za-z][A-Za-z]+ [A-Za-z][A-Za-z]+' required>
+                <label for= 'number'>Number of Rooms:</label>
+                <input type ='number' id = 'number' name='number' minlength='1' size='20' required>
+                <label for='type'>Room Type:</label>
+                <input list='room-type' id='type' name='type' required>
+                <datalist id='room-type'>
+                    <option value='Single'></option>
+                    <option value='Double'></option>
+                    <option value='Triple'></option>
+                    <option value='Quad'></option>
+                    <option value='Queen'></option>
+                    <option value='King'></option>
+                    <option value='Suite'></option>
+                    <option value='Other (please comment below)'></option>
+                </datalist>
+                <label for='rating'>How Many Rooms? (1 - 10):</label>
+                <input type='range' id='rating' value='5' min='1' max='10' step='1' oninput='adjustRating(this.value)' onchange='adjustRating(this.value)'>
+                <span id='ratingvalue'>5</span>
+                <p class = "pay">How would you like to pay?<br> Please Specify:</p>
+                <div class='radio'>
+                    <div class='radiobutton'>
+                        <label for='yes'>Cash</label>
+                        <input type='radio' id='yes' name='pay' value='yes' checked>
+                    </div>
+                    <div class='radiobutton'>
+                        <label for='no'>Credit</label>
+                        <input type='radio' id='credit' name='pay' value='no'>
+                    </div>
+                    <div class='radiobutton'>
+                        <label for='no'>Check</label>
+                        <input type='radio' id='check' name='pay' value='maybe'>
+                    </div>
+                    <div class='radiobutton'>
+                        <label for='other'>Other:</label>
+                        <input type='other' id='other' name='pay' value='explain how you will pay'>
+                    </div>
+                </div>
+                <div class='textfield'>
+                    <textarea name='comments' rows='10' cols='40' max='500' placeholder='Please list any additonal comments here regarding your stay so that we accomodate you according to your needs. Thank you!'></textarea>
+                </div>
+                <input type='submit' class='button' value='Send Report'>
+                <h4 class = 'help'>
+                </h4>
+            </form>
+        </main>
+        <footer>
+            <p class='legal'>&copy; <span id='copyrightyear'></span> | Jaren L. Abbott | Illinois | <a class = "byui" href='https://www.byui.edu/online'>BYUI Online Learning</a></p>
+            <p class='highlight'> Last Updated: <span id='lastupdated'></span><p>
+        </footer> 
+    </body>
+</html>

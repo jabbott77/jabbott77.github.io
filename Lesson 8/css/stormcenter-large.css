@@ -24,13 +24,6 @@
         background-color: #41FFF2;
     }
     
-    body {
-        background-color: #CFCFCF;
-        max-width: 760px;
-        display: block;
-        margin: auto;
-    }
-    
     h1, h2, h3, figcaption {
         font-family: 'Sanita Swashed', cursive;
         color: #9F33FF;
