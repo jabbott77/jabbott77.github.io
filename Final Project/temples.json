@@ -2,43 +2,46 @@
     "temples":[
     {
         "name":"Manila Philippines",
+        "image":"manila.jpg",
         "address":"13 Temple Drive Greenmeadows Subdivision 1110  Quezon City, Metro Manila Philippines",
         "email":"Temples@lds.org",
         "phone": "(+63) 2-635-0954",
         "services":"Clothing rental available. NO cafeteria food served. Patron housing available. Distribution store nearby",
         "history":"The Manila Philippines Temple was the first temple built in the Philippines and the second built in Asia. The street where the Manila Philippines Temple is located was renamed to Temple Drive during the temple's construction. A typhoon approached Manila the day before the groundbreaking of the Manila Philippines Temple, creating concern that would event would have to be postponed. At a mission conference that evening, a missionary prayed for the weather to cooperate so that the groundbreaking could continue. The typhoon changed direction that night, and the groundbreaking proceeded as planned. Nearly 27,000 toured the interior of the Manila Philippines Temple during its 13-day open house held prior to its dedication. The days prior to the dedication of the Manila Philippines Temples saw several natural disasters in the Philippines including two typhoons, the eruption of Mayon volcano on Bicol Peninsula, and an earthquake in northern Luzon. The temple remained unaffected. The Manila Philippines Temple was dedicated in nine sessions by President Gordon B. Hinckley, Second Counselor in the First Presidency. (referenced by churchofjesuschristtemples.org)",
-        "closure":"Closed in 2020",
-        "image":"manila.jpg"
+        "closure":"Closed in 2020"
     },
     {
         "name":"Bern Switzerland",
+        "image":"switzerland.jpg", 
         "address":"Tempelstrasse 2 CH-3052  Zollikofen, Bern Switzerland",
         "email":"Temples@lds.org",
         "phone":"(+41) 31-915-5252",
         "services":"Clothing rental available. NO cafeteria food served. Patron housing available. Distribution store nearby",
         "history":"The Bern Switzerland Temple was the first temple built in Europe (and in Switzerland). The Bern Switzerland Temple was the first 'overseas' temple built by the Church. The Bern Switzerland Temple was the first temple to use film presentation of the endowment ceremony. The Bern Switzerland Temple was the first temple where English would not be the predominant language. (referenced by churchofjesuschristtemples.org)",
-        "closure":"Closed in 2020",
-        "image":"switzerland.jpg" 
+        "closure":"Closed in 2020"
+        
     },
     {
         "name":"Carcas Venezuela",
+        "image":"venezuela.jpg",
         "address":"Avenida C con Calle C-1 Urbanización Caurimare Caracas, Distrito Federal  1062-A Venezuela",
         "email":"Temples@lds.org",
         "phone":"(+58) 212-981-1873",
         "services":"NO clothing rental available. NO cafeteria food served. NO patron housing available. Distribution store nearby",
         "history":"In 1995, LDS Church president Gordon B. Hinckley announced plans to construct an LDS temple in Venezuela. Immediately following that announcement, a search was conducted to find a suitable site on which to build. Several properties were considered over the next eighteen months but none was chosen. It was finally decided the temple would be built in the city of Caracas on land that the church already owned. The groundbreaking of the Caracas Venezuela Temple took place in 1999. (referenced by churchofjesuschristtemples.org)",
-        "closure":"Closed in 2020",
-        "image":"venezuela.jpg"
+        "closure":"Closed in 2020"
+        
     },
     { 
         "name":"Asuncion Paraguay",
+        "image":"paraguay.jpg", 
         "address":"Esquina Brasilia y España, 1441  Asunción Paraguay",
         "email":"Temples@lds.org",
         "phone":"(+63) 2-635-0954",
         "services":"Clothing rental available. NO cafeteria food served. Patron housing available. Distribution store nearby",
         "history":"The Asunción Paraguay Temple was the first temple built in Paraguay. The Asunción Paraguay Temple was built on the site of the first meetinghouse of The Church of Jesus Christ of Latter-day Saints built in Paraguay. The building, constructed in 1964, was demolished to make room for the temple and a new meetinghouse, which incorporated a residential mansion that had been acquired by the Church to increase the size of the property. (referenced by churchofjesuschristtemples.org)",
-        "closure":"Closed in 2020",
-        "image":"paraguay.jpg" 
+        "closure":"Closed in 2020"
+        
     }
 ]
 }

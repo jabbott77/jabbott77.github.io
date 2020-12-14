@@ -54,6 +54,7 @@ fetch(URL)
         let image = document.createElement('img');
         let hr = document.createElement('hr');
 
+        image.setAttribute('src', 'images/' + temples[i].image);
         h1.textContent = temples[i].name;
         address.textContent = 'Address: ' + temples[i].address;
         email.textContent = 'Email: ' + temples[i].email;
@@ -61,7 +62,7 @@ fetch(URL)
         services.textContent = 'Services: ' + temples[i].services;
         history.textContent = 'History: ' + temples[i].history;
         closure.textContent = 'Closure: ' + temples[i].closure;
-        image.setAttribute('src', 'images/' + temples[i].photo);
+        
 
         text.appendChild(h1);
         text.appendChild(address);
@@ -72,8 +73,8 @@ fetch(URL)
         text.appendChild(history);
         text.appendChild(closure);
 
-        town_name.appendChild(text);
-        town_name.appendChild(image);
+        temple_name.appendChild(text);
+        temple_name.appendChild(image);
 
         //document.getElementById('towns').appendChild(town_name);
 
