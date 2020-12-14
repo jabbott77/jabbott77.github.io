@@ -30,7 +30,7 @@ window.addEventListener('load', (event)=>{
       b.style.display = "block";
   }
 });
-const URL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+const URL = 'https://jabbott77.github.io/Final%20Project/temples.json';
 
 fetch(URL)
 .then(function (response) {
@@ -38,47 +38,56 @@ fetch(URL)
   })
   .then(function (jsonObject) {
     console.table(jsonObject);
-    const towns = jsonObject['temples'];
+    const temples = jsonObject['temples'];
 
-    for(i = 0; i < towns.length; i++){
-      if(towns[i].name == 'Preston' || towns[i].name == 'Soda Springs' || towns[i].name == 'Fish Haven'){
-        let town_name  = document.createElement('section');
+    for(i = 0; i < temples.length; i++){
+      if(temples[i].name == 'Asuncion Paraguay' || temples[i].name == 'Bern Switzerland' || temples[i].name == 'Carcas Venezuela' || temples[i].name == 'Manila Philippines'){
+        let temple_name  = document.createElement('section');
         let text = document.createElement('div');
         let h1 = document.createElement('h1');    
-        let motto = document.createElement('h3');
-        let founded = document.createElement('p');
-        let pop = document.createElement('p');
-        let rain_fall = document.createElement('p');
+        let address = document.createElement('p');
+        let email = document.createElement('p');
+        let phone = document.createElement('p');
+        let services = document.createElement('p');
+        let history = document.createElement('p');
+        let closure = document.createElement('p');
         let image = document.createElement('img');
         let hr = document.createElement('hr');
 
-        h1.textContent = towns[i].name;
-        motto.textContent = towns[i].motto;
-        founded.textContent = 'Founded in ' + towns[i].yearFounded;
-        pop.textContent = 'Population: ' + towns[i].currentPopulation;
-        rain_fall.textContent = 'Average Annual Rainfall: ' + towns[i].averageRainfall + ' inches';
-        image.setAttribute('src', 'images/' + towns[i].photo);
+        h1.textContent = temples[i].name;
+        address.textContent = 'Address: ' + temples[i].address;
+        email.textContent = 'Email: ' + temples[i].email;
+        phone.textContent = 'Phone: ' + temples[i].phone;
+        services.textContent = 'Services: ' + temples[i].services;
+        history.textContent = 'History: ' + temples[i].history;
+        closure.textContent = 'Closure: ' + temples[i].closure;
+        image.setAttribute('src', 'images/' + temples[i].photo);
 
         text.appendChild(h1);
-        text.appendChild(motto);
+        text.appendChild(address);
         text.appendChild(hr)
-        text.appendChild(founded);
-        text.appendChild(pop);
-        text.appendChild(rain_fall);
+        text.appendChild(email);
+        text.appendChild(phone);
+        text.appendChild(services);
+        text.appendChild(history);
+        text.appendChild(closure);
 
         town_name.appendChild(text);
         town_name.appendChild(image);
 
         //document.getElementById('towns').appendChild(town_name);
 
-        if(towns[i].name == 'Preston'){
-          document.getElementById('preston').appendChild(town_name);
+        if(temples[i].name == 'Asuncion Paraguay'){
+          document.getElementById('paraguay').appendChild(temple_name);
         }
-        else if(towns[i].name == 'Soda Springs'){
-          document.getElementById('soda').appendChild(town_name);
+        else if(temples[i].name == 'Bern Switzerland'){
+          document.getElementById('switzerland').appendChild(temple_name);
         }
-        else if (towns[i].name == 'Fish Haven'){
-          document.getElementById('fish').appendChild(town_name);
+        else if (temples[i].name == 'Carcas Venezuela'){
+          document.getElementById('venezuela').appendChild(temple_name);
+        }
+        else if (temples[i].name == 'Manila Philippines'){
+          document.getElementById('manila').appendChild(temple_name);
         }
       }
     }

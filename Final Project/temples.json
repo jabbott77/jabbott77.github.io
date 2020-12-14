@@ -1,7 +1,7 @@
 {
     "temples":[
     {
-        "Name":"Asuncion Paraguay",
+        "Name":"Manila Philippines",
         "Address":"13 Temple Drive Greenmeadows Subdivision 1110  Quezon City, Metro Manila Philippines",
         "Email":"Temples@lds.org",
         "Phone": "(+63) 2-635-0954",
@@ -31,7 +31,6 @@
         "Image":"venezuela.jpg"
     },
     { 
-        "Asuncion Paraguay Temple":{
         "Name":"Asuncion Paraguay",
         "Address":"Esquina Brasilia y España, 1441  Asunción Paraguay",
         "Email":"Temples@lds.org",
@@ -40,7 +39,6 @@
         "History":"The Asunción Paraguay Temple was the first temple built in Paraguay. The Asunción Paraguay Temple was built on the site of the first meetinghouse of The Church of Jesus Christ of Latter-day Saints built in Paraguay. The building, constructed in 1964, was demolished to make room for the temple and a new meetinghouse, which incorporated a residential mansion that had been acquired by the Church to increase the size of the property. (referenced by churchofjesuschristtemples.org)",
         "Temple Closure":"Closed in 2020",
         "Image":"paraguay.jpg" 
-        }
     }
 ]
 }
