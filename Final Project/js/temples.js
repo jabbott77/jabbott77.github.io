@@ -65,8 +65,8 @@ fetch(URL)
         
 
         text.appendChild(h1);
-        text.appendChild(address);
         text.appendChild(hr)
+        text.appendChild(address);
         text.appendChild(email);
         text.appendChild(phone);
         text.appendChild(services);
