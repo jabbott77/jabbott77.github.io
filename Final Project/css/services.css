@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@500&family=Dancing+Script:wght@500&display=swap');
 @media only screen and (min-width: 350px) {
+    .active {
+        text-decoration: underline;
+        background-color: lightgray;
+        border-radius: 25px;
+    }   
 nav {
     margin: 0 auto;
 }
@@ -78,7 +83,8 @@ body {
         padding: 2em;
     }
     main li {
-        font-size: 30px;
+        font-size: 25px;
+        list-style: none;
     }
     h2 {
         font-size: 40px;
