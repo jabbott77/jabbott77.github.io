@@ -16,6 +16,9 @@ nav {
     margin-left: auto;
     margin-right: auto;
 }
+header li {
+    font-size: 20px;
+}
 .navigation li {
     display: none;
 }
@@ -58,17 +61,10 @@ li, p {
 label {
     font-family: 'Cormorant'; 
 }
-.motto {
-    float:right;
-}
 main {
     padding: 60px;
+    width: 120%;
 }
-.meat img{
-    margin: 0 auto 0 auto;
-}
-
-
     form {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -171,8 +167,15 @@ main {
         margin: 0 auto;
         box-sizing: border-box;
         }
+        .motto {
+            font-size: 40px;
+        }
 }
 @media only screen and (min-width: 900px) {
+    header {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
     .hidden{
         display: none;
     }
@@ -214,5 +217,8 @@ main {
     }
     .social {
         margin: 0 auto 0 auto;
+    }
+    .motto {
+        float: right;
     }
 }

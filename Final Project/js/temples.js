@@ -91,5 +91,108 @@ fetch(URL)
           document.getElementById('manila').appendChild(temple_name);
         }
       }
-    }
-  });
+    };
+    
+      let weatherRequest1 = new XMLHttpRequest();
+let apiURLstring1 = 'https://api.openweathermap.org/data/2.5/weather?id=5585000&units=imperial&APPID=a0606e0113b21e757ac98d42ce6de0ab';
+const requestURL1 = 'https://jabbott77.github.io/Final%20Project/temples.json';
+weatherRequest1.open('Get', apiURLstring1, true);
+weatherRequest1.send();
+
+weatherRequest1.onload = function() {
+    let weatherData = JSON.parse(weatherRequest1.responseText);
+    console.log(weatherData);
+
+
+    let current = weatherData.weather[0].main;
+    let temp = Math.round(weatherData.main.temp, 0);
+    let humid = Math.round(weatherData.main.humidity, 0);
+    let windspeed = weatherData.wind.speed;
+    let imageConditions = 'https://openweathermap.org/weather-conditions';
+
+    document.getElementById('current1').innerHTML = current;
+    document.getElementById('temp1').innerHTML = temp;
+    document.getElementById('humid1').innerHTML = humid;
+    document.getElementById('windspeed1').innerHTML = windspeed;
+
+    document.getElementById('conditions-icon').setAttribute('src', imageConditions + weatherData.weather[0].icon + '.jpg');
+    document.getElementById('conditions-icon').setAttribute('alt', weatherData.weather[0].description);
+}
+    });
+
+    let weatherRequest2 = new XMLHttpRequest();
+    let apiURLstring2 = 'https://api.openweathermap.org/data/2.5/weather?id=5585000&units=imperial&APPID=a0606e0113b21e757ac98d42ce6de0ab';
+    const requestURL2 = 'https://jabbott77.github.io/Final%20Project/temples.json';
+    weatherRequest2.open('Get', apiURLstring2, true);
+    weatherRequest2.send();
+    
+    weatherRequest2.onload = function() {
+        let weatherData = JSON.parse(weatherRequest2.responseText);
+        console.log(weatherData);
+    
+    
+        let current = weatherData.weather[0].main;
+        let temp = Math.round(weatherData.main.temp, 0);
+        let humid = Math.round(weatherData.main.humidity, 0);
+        let windspeed = weatherData.wind.speed;
+        let imageConditions = 'https://openweathermap.org/weather-conditions';
+    
+        document.getElementById('current2').innerHTML = current;
+        document.getElementById('temp2').innerHTML = temp;
+        document.getElementById('humid2').innerHTML = humid;
+        document.getElementById('windspeed2').innerHTML = windspeed;
+    
+        document.getElementById('conditions-icon').setAttribute('src', imageConditions + weatherData.weather[0].icon + '.jpg');
+        document.getElementById('conditions-icon').setAttribute('alt', weatherData.weather[0].description);
+    };
+        let weatherRequest3 = new XMLHttpRequest();
+        let apiURLstring3 = 'https://api.openweathermap.org/data/2.5/weather?id=5585000&units=imperial&APPID=a0606e0113b21e757ac98d42ce6de0ab';
+        const requestURL3 = 'https://jabbott77.github.io/Final%20Project/temples.json';
+        weatherRequest3.open('Get', apiURLstring3, true);
+        weatherRequest3.send();
+        
+        weatherRequest3.onload = function() {
+            let weatherData = JSON.parse(weatherRequest3.responseText);
+            console.log(weatherData);
+        
+        
+            let current = weatherData.weather[0].main;
+            let temp = Math.round(weatherData.main.temp, 0);
+            let humid = Math.round(weatherData.main.humidity, 0);
+            let windspeed = weatherData.wind.speed;
+            let imageConditions = 'https://openweathermap.org/weather-conditions';
+        
+            document.getElementById('current3').innerHTML = current;
+            document.getElementById('temp3').innerHTML = temp;
+            document.getElementById('humid3').innerHTML = humid;
+            document.getElementById('windspeed3').innerHTML = windspeed;
+        
+            document.getElementById('conditions-icon').setAttribute('src', imageConditions + weatherData.weather[0].icon + '.jpg');
+            document.getElementById('conditions-icon').setAttribute('alt', weatherData.weather[0].description);
+        };
+
+            let weatherRequest4 = new XMLHttpRequest();
+            let apiURLstring4 = 'https://api.openweathermap.org/data/2.5/weather?id=5585000&units=imperial&APPID=a0606e0113b21e757ac98d42ce6de0ab';
+            const requestURL4 = 'https://jabbott77.github.io/Final%20Project/temples.json';
+            weatherRequest4.open('Get', apiURLstring4, true);
+            weatherRequest4.send();
+            
+            weatherRequest4.onload = function() {
+                let weatherData = JSON.parse(weatherRequest4.responseText);
+                console.log(weatherData);
+            
+            
+                let current = weatherData.weather[0].main;
+                let temp = Math.round(weatherData.main.temp, 0);
+                let humid = Math.round(weatherData.main.humidity, 0);
+                let windspeed = weatherData.wind.speed;
+                let imageConditions = 'https://openweathermap.org/weather-conditions';
+            
+                document.getElementById('current4').innerHTML = current;
+                document.getElementById('temp4').innerHTML = temp;
+                document.getElementById('humid4').innerHTML = humid;
+                document.getElementById('windspeed4').innerHTML = windspeed;
+            
+                document.getElementById('conditions-icon').setAttribute('src', imageConditions + weatherData.weather[0].icon + '.jpg');
+                document.getElementById('conditions-icon').setAttribute('alt', weatherData.weather[0].description);
+            };

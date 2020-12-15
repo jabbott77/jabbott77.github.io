@@ -56,9 +56,6 @@ li, p {
     font-family: 'Cormorant';
     color:  #15619e;
 }
-.motto {
-    float:right;
-}
 main {
     padding: 60px;
 }
@@ -78,8 +75,15 @@ footer {
     background-color:#93c5ee;
     padding: 2em;
 }
+.motto {
+    font-size: 40px;
+}
 }
 @media only screen and (min-width: 60em) {
+    header {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
     .hidden{
         display: none;
     }
@@ -141,5 +145,8 @@ footer {
     }
     .social {
         margin: 0 auto 0 auto;
+    }
+    .motto {
+        float: right;
     }
 }

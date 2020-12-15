@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+    <head>
+        <title>Celestial Comfort</title>
+        <meta charset="utf-8">
+        <meta name='description' content="Final Project"> 
+        <meta name='viewport' content='width=device-width, intitial-scale=1.0'>
+        <link rel='stylesheet' href='css/contact.css'>
+        <link rel="shortcut icon" href="cc.ico">
+        <script src = "js/temples.js"></script>
+    </head>
+    <body>
+        <header>
+             <img class = "logo" src = "images/cclogo.png" alt = "logo">
+                       
+            <h2 class = "motto">"Comfort That Defies All Description"</h2>
+            <nav class = "clearfix">
+                    <ul class = "navigation">
+                        <li><a class="menu" href="#">Menu</a></li>
+                        <li ><a href="https://jabbott77.github.io/Lesson%209/index-9.html">Home</a></li>
+                        <li ><a href="https://jabbott77.github.io/Lesson%209/index-9.html">Temples</a></li>
+                        <li ><a href="https://jabbott77.github.io/Lesson%209/index-9.html">Services</a></li>
+                        <li ><a href="https://jabbott77.github.io/Lesson%209/index-9.html">Reservation</a></li>
+                        <li ><a href="https://jabbott77.github.io/Lesson%209/index-9.html">Contact</a></li>
+                    </ul>                        
+            </nav>                        
+            <h1 class = "title">Celestial Comfort</h1> 
+        </header>
+        <main>
+            <h2>Contact Page</h2>
+            <div id = 'info'>
+                <h3>Main Headquarters Information</h3>
+                <ul>
+                    <li>Address: 4800 Montgomery Ln #300, Bethesda, MD 20814</li>
+                    <li>Email: celestial@comfort.com</li>
+                    <li>Phone: 1-630-881-5860</li>
+                </ul>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.404837028553!2d-77.09772048438202!3d38.98325594948326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0xceab47cd19a23a3b!2s4800%20Montgomery%20Ln%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1607976892599!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <h3>Senior Operations Manager President: Jaren Abbott</h3>
+                <ul>
+                    <li>Address: 2320 South 2nd West, Rexburg, ID</li>
+                    <li>Email: jarenabbott@gmail.com</li>
+                    <li>Phone: 1-630-881-5860</li>
+                </ul>
+            </div>
+            <div id = 'cus'>
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+           <li>
+             <label for="name">Name:</label>
+             <input type="text" id="name" name="user_name">
+           </li>
+           <li>
+             <label for="mail">E-mail:</label>
+             <input type="email" id="mail" name="user_mail">
+           </li>
+           <li>
+             <label for="msg">Message:</label>
+             <textarea id="msg" name="user_message"></textarea>
+           </li>
+            <li class="button">
+           <button type="submit">Send your message</button>
+         </li>
+               </ul>
+             </form>
+             <script>
+             const feedbackElement = document.getElementById("feedback");
+             const formElement = document.forms[0];
+             formElement.addEventListener("submit", function(e)  {
+                 e.preventDefault();
+                 feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+                 feedbackElement.style.display = "block";
+                 document.body.classList.toggle("moveDown");
+             });
+             </script>
+            </div>
+        </main>
+        <footer>
+            <p class='legal'>&copy; <span id='copyrightyear'></span> | Jaren L. Abbott | Illinois | <a class = "byui" href='https://www.byui.edu/online'>BYUI Online Learning</a></p>
+            <p class='highlight'> Last Updated: <span id='lastupdated'></span><p>
+        </footer> 
+    </body>
+</html>
