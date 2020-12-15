@@ -115,6 +115,10 @@ body {
     div {
         padding: 0 20px;
     }
+    main li {
+        font-size: 16px;
+        margin: 0 auto;
+    }
 }
 @media only screen and (min-width: 900px) {
     header {
@@ -138,7 +142,10 @@ body {
     .navigation li:first-child {
         display: none;
     }
-    p {
+    p{
+        font-size: 24px;
+    }
+    main li {
         font-size: 24px;
     }
     .dcontact {
