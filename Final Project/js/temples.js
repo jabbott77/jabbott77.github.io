@@ -94,7 +94,7 @@ fetch(URL)
     };
     
       let weatherRequest1 = new XMLHttpRequest();
-let apiURLstring1 = 'https://api.openweathermap.org/data/2.5/weather?id=5585000&units=imperial&APPID=a0606e0113b21e757ac98d42ce6de0ab';
+let apiURLstring1 = 'https://api.openweathermap.org/data/2.5/weather?id=3437598&units=imperial&APPID=a0606e0113b21e757ac98d42ce6de0ab';
 const requestURL1 = 'https://jabbott77.github.io/Final%20Project/temples.json';
 weatherRequest1.open('Get', apiURLstring1, true);
 weatherRequest1.send();
@@ -121,7 +121,7 @@ weatherRequest1.onload = function() {
     });
 
     let weatherRequest2 = new XMLHttpRequest();
-    let apiURLstring2 = 'https://api.openweathermap.org/data/2.5/weather?id=5585000&units=imperial&APPID=a0606e0113b21e757ac98d42ce6de0ab';
+    let apiURLstring2 = 'https://api.openweathermap.org/data/2.5/weather?id=2658434&units=imperial&APPID=a0606e0113b21e757ac98d42ce6de0ab';
     const requestURL2 = 'https://jabbott77.github.io/Final%20Project/temples.json';
     weatherRequest2.open('Get', apiURLstring2, true);
     weatherRequest2.send();
@@ -146,7 +146,7 @@ weatherRequest1.onload = function() {
         document.getElementById('conditions-icon').setAttribute('alt', weatherData.weather[0].description);
     };
         let weatherRequest3 = new XMLHttpRequest();
-        let apiURLstring3 = 'https://api.openweathermap.org/data/2.5/weather?id=5585000&units=imperial&APPID=a0606e0113b21e757ac98d42ce6de0ab';
+        let apiURLstring3 = 'https://api.openweathermap.org/data/2.5/weather?id=3625428&units=imperial&APPID=a0606e0113b21e757ac98d42ce6de0ab';
         const requestURL3 = 'https://jabbott77.github.io/Final%20Project/temples.json';
         weatherRequest3.open('Get', apiURLstring3, true);
         weatherRequest3.send();
@@ -172,7 +172,7 @@ weatherRequest1.onload = function() {
         };
 
             let weatherRequest4 = new XMLHttpRequest();
-            let apiURLstring4 = 'https://api.openweathermap.org/data/2.5/weather?id=5585000&units=imperial&APPID=a0606e0113b21e757ac98d42ce6de0ab';
+            let apiURLstring4 = 'https://api.openweathermap.org/data/2.5/weather?id=1701668&units=imperial&APPID=a0606e0113b21e757ac98d42ce6de0ab';
             const requestURL4 = 'https://jabbott77.github.io/Final%20Project/temples.json';
             weatherRequest4.open('Get', apiURLstring4, true);
             weatherRequest4.send();

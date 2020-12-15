@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@500&family=Dancing+Script:wght@500&display=swap');
+@media only screen and (min-width: 350px) {
+nav {
+    margin: 0 auto;
+}
+.navigation {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.navigation li:first-child {
+    display: block;
+}
+header li {
+    font-size: 20px;
+}
+.menu {
+    margin-left: auto;
+    margin-right: auto;
+}
+.navigation li {
+    display: none;
+}
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: #15619e;
+    font-weight: 700;
+    text-align:center;
+    border-radius: 25px;
+}
+.navigation a:hover {
+    color: white;
+    background-color: #93c5ee;
+}
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+    display: block;
+}
+h2, h1, h3 {
+    font-family: 'Dancing Script', cursive;
+    color: #15619e;
+}
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+}
+li, p {
+    font-family: 'Cormorant';
+    color:  #15619e;
+}
+label {
+    font-family: 'Cormorant'; 
+}
+.clearfix {
+    padding: auto 0;
+}
+main {
+    padding: 60px;
+    text-align: center;
+}
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+    }
+      footer {
+        text-align: center;
+        background-color:#93c5ee;
+        padding: 2em;
+    }
+    main li {
+        font-size: 27px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 35px;
+    }
+    .hall {
+        max-width: 60%;
+    }
+    .food {
+        max-width: 70%;
+    }
+    .setup {
+        max-width: 60%;
+    }
+    main {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    main li {
+        list-style: none;
+    }
+    main p {
+        font-size: 30px;
+    }
+}
+@media only screen and (min-width: 900px) {
+    header {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    .hidden{
+        display: none;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: row;
+    }
+    .navigation li {
+        display: block; /* change state in small view */
+        flex: 1 1 auto;
+    }
+    .navigation a {
+        text-align: center;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+    p {
+        font-size: 24px;
+    }
+    .dcontact {
+        padding: 30px;
+    }
+    .contactlist li {
+        font-size: 24px;
+    }
+    .contactlist {
+        list-style: none;
+    }
+    .social {
+        float: right;
+    }
+    .social img {
+        padding: 10px;
+        width: 50px;
+    }
+    .social {
+        margin: 0 auto 0 auto;
+    }
+    .motto {
+        float: right;
+
+}

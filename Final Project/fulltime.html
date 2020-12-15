@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+    <head>
+        <title>Celestial Comfort</title>
+        <meta charset="utf-8">
+        <meta name='description' content="Final Project"> 
+        <meta name='viewport' content='width=device-width, intitial-scale=1.0'>
+        <link rel='stylesheet' href='css/fulltime.css'>
+        <link rel="shortcut icon" href="cc.ico">
+        <script src = "js/temples.js"></script>
+    </head>
+    <body>
+        <header>
+             <img class = "logo" src = "images/cclogo.png" alt = "logo">
+                       
+            <h2 class = "motto">"Comfort That Defies All Description"</h2>
+            <nav class = "clearfix">
+                    <ul class = "navigation">
+                        <li><a class="menu" href="#">Menu</a></li>
+                        <li ><a href="https://jabbott77.github.io/Lesson%209/index-9.html">Home</a></li>
+                        <li ><a href="https://jabbott77.github.io/Lesson%209/index-9.html">Temples</a></li>
+                        <li ><a href="https://jabbott77.github.io/Lesson%209/index-9.html">Services</a></li>
+                        <li ><a href="https://jabbott77.github.io/Lesson%209/index-9.html">Reservation</a></li>
+                        <li ><a href="https://jabbott77.github.io/Lesson%209/index-9.html">Contact</a></li>
+                    </ul>                        
+            </nav>                        
+            <h1 class = "title">Celestial Comfort</h1> 
+        </header>
+        <main>
+            <h2>Full-time Missionaries/Guest Rooms</h2>
+            <div class = 'lot'>
+                <p>We appreciate the hard work of all full-time missionaries and temple patrons. That is why we have provided
+                   high quality rooms and suites for your stay to thank and comfort you for your hard work in the Lord's House. 
+                   Full-time Missionaries will have discounted prices for each type of room, just be sure to talk with a representative
+                   on our contact page to discuss the different discounts for you to use. 
+                </p>
+                <div class = 'acc'>
+                    <h2>Single/Double/Triple/Quad</h2>
+                    <img class = "bed" src = "images/double.jfif" alt = "bed">
+                    <p>
+                        These rooms provide comfort at a cheap price. You can fit up to 5-6 people in a quad with a pull out sofa.
+                        This picture shows a double, but we have plenty of each room, just be sure to call ahead to reserve a room. 
+                        Rates: Single Room - $80 per night + $25 for each bed added depending on how many guests there are. 
+                    <p>
+                </div>
+                <div class = 'dqueen'>
+                    <h2>Queen</h2>
+                    <img class = "queen" src = "images/suite3.jfif" alt = "queen">
+                    <p>
+                       This room is even deserving for a queen. A perfect room to prepare you for your worship in the temple. This room can fit
+                       up to 3-4 people with a pull out sofa. This room also has a nice view of the city in certain locations, so be sure 
+                       to call ahead to reserve a room.
+                       Rates: Queen Room - $150 per night 
+                    </p>
+                </div>
+                <div class = 'dking'>
+                    <h2>King</h2><img class = "king" src = "images/suite1.jfif" alt = "king">
+                    <p>
+                        A true room for a king. This room boasts a luxurious bed and exquisite bath and shower. This room can fit up to 3-4
+                        people with a pull out sofa. This room has a beautiful view of the temple in all locations, so be sure to call ahead
+                        to reserve a room. 
+                        Rates: King Room - $200 per night 
+                    </p>
+                </div>
+                <div class = 'dsuite'>
+                    <h2>The Celestial Suite</h2><img class = "suite" src = "images/suite2.jfif" alt = "suite">
+                    <p>
+                        The best rooms that we have to offer. The Celestial Suite holds multiple bedrooms which can hold about 5-6 people(great for families).
+                        This picture shows one of the bedrooms and all the bedrooms are connected to a kitchen leading a living room. 
+                        There are three majestic bathrooms and the suite has an amazing view of both the city and the temple. This is simply
+                        the best room that you will ever stay in, so be sure to call ahead to reserve a room. 
+                        Rates: The Celestial Suite - $350 per night 
+                    </p>
+                </div>
+                <div id = 'cus'>
+                    <form action="/my-handling-form-page" method="post">
+                        <ul>
+                   <li>
+                     <label for="name">Name:</label>
+                     <input type="text" id="name" name="user_name">
+                   </li>
+                   <li>
+                     <label for="mail">E-mail:</label>
+                     <input type="email" id="mail" name="user_mail">
+                   </li>
+                   <li>
+                     <label for="msg">Message:</label>
+                     <textarea id="msg" name="user_message"></textarea>
+                   </li>
+                    <li class="button">
+                   <button type="submit">Send your message</button>
+                 </li>
+                       </ul>
+                     </form>
+                     <script>
+                     const feedbackElement = document.getElementById("feedback");
+                     const formElement = document.forms[0];
+                     formElement.addEventListener("submit", function(e)  {
+                         e.preventDefault();
+                         feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+                         feedbackElement.style.display = "block";
+                         document.body.classList.toggle("moveDown");
+                     });
+                     </script>
+                    </div>
+            </div>
+        </main>
+            <footer>
+                <p class='legal'>&copy; <span id='copyrightyear'></span> | Jaren L. Abbott | Illinois | <a class = "byui" href='https://www.byui.edu/online'>BYUI Online Learning</a></p>
+                <p class='highlight'> Last Updated: <span id='lastupdated'></span><p>
+            </footer> 
+        </body>
+        </html>
