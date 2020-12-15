@@ -12,6 +12,9 @@ nav {
 .navigation li:first-child {
     display: block;
 }
+header li {
+    font-size: 20px;
+}
 .menu {
     margin-left: auto;
     margin-right: auto;
@@ -77,6 +80,9 @@ footer {
 }
 .motto {
     font-size: 40px;
+}
+img {
+    padding: 20px;
 }
 }
 @media only screen and (min-width: 60em) {
